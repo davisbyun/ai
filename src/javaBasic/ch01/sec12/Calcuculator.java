@@ -16,12 +16,12 @@ public class Calcuculator {
 		
 		//출력
 		
-		System.out.println("1번 알바 정보 : " + name + " " + basicPay + " " + phoneNumber + " ");
+		System.out.println("1번 알바 정보:  " + name + " " + basicPay + " " + phoneNumber + " ");
 		System.out.println(accountNumber + " " + dept + " " + sex + " " + tex +" "); 
 		
 		System.out.println("------------------------------------------");
 		
-		String name1;
+		String name1; //문자열 name1
 		name1 = "이순신";
 		
 		int basicPay1 = 20000;
@@ -83,7 +83,7 @@ public class Calcuculator {
 		
 		//출력
 		
-		System.out.println("5번 알바 정보 : " + name4 + " " + basicPay4 + " " + phoneNumber4 + " ");
+		System.out.println("5번 알바 정보:" + name4 + " " + basicPay4 + " " + phoneNumber4 + " ");
 		System.out.println(accountNumber4 + " " + dept4 + " " + sex4 + " " + tex4 +" "); 
 		
 		
