@@ -1,0 +1,25 @@
+package javaBasic2.ch05.sec03;
+
+public class 문자열추출 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String title = "자바프로그래밍"; //문자열 객체
+		String title2 = new String("자바프로그래밍");
+		
+		System.out.println(title2.length());
+		System.out.println(title2.charAt(6));   //밍 (문자열의 인덱스는 0부터 시작)
+		
+		title2 = title2.replace("자바", "java");  //문자열 변경
+		System.out.println(title2);
+		
+		System.out.println(title2.substring(4, 8)); //프로그래
+		//자바 추출
+		System.out.println(title.substring(0, 2));  //자바
+
+		//밍의 인덱스
+		System.out.println(title.indexOf("밍"));
+		System.out.println(title.indexOf(1)); 
+	}
+}

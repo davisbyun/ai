@@ -1,0 +1,101 @@
+package javaBasic.ch04.sec05;
+
+public class While문연습 {
+
+	public static void main(String[] args) {
+		// 2 4 6 8 10 출력해보기
+		// 2를 정수형 변수에 넣기
+		// 정수형 변수를 2씩 더한다
+		// 10이 넘으면 종료한다.
+		
+		//int n = 2;
+		//while(n <= 10) {
+		//	System.out.println(n);
+		//	n = n + 2;  			
+			
+		// do ~while 문	
+			
+		//do { }//반복할 내용	
+		//while();
+			
+//		int n2 = 1;
+//		do {
+//			System.out.println(n2);
+//			n2++;
+//		}
+//		while(n2<=10);
+		
+				
+		//10, 9, 8...1
+		
+//		int n3 = 10;
+//		do {
+//			System.out.println(n3);
+//			n3--;
+//		}
+//		while(n3 >= 1);
+//		
+//		//2,4,6....20
+//		int n4 = 2;
+//		do {
+//			System.out.println(n4);
+//			n4 = n4 +2
+//		}
+//		while(n4<=20);
+//		
+		//5,10,15....100
+//		int n5 = 5;
+//		do {
+//			System.out.println(n5);
+//			n5 = n5 +5;
+//		}
+//		while(n5<=100);
+		
+		//for문
+		
+		/* 형식 for(초기값; 조건식; 증가값) { }
+		 *
+		 * 
+		 * 
+		 * 
+		 * */
+		// 1~10까지 출력
+		
+//		for(i =1; i<=10; i++){
+//			System.out.println(i);
+//			
+//		for(j = 1; j<= 50; j++) {
+//			System.out.println(j);
+//			
+//		for(int i = 1, j=10; i<=10 || j<= 19; i++, j++ ) {
+//			System.out.println(i + "  " + j );
+//			}
+		
+		
+		//변수 3개를 사용해서 1~100 100~1 200~300
+		
+//		for( i =1, j=100, k=200 ; i<=100 || j>= 1 || k>= 300 ; i++, j--, k++) {
+//			System.out.println(i + "  "+ j +"  "+ k);
+//		}
+		
+		
+		
+		//1
+		//1 2
+		//2
+		//2 3
+		//3 
+		//3 4
+		
+		for(i = 1; i <= 3 ; i++) {
+			System.out.println(i);
+			for(j = i; j <= i+1; j++) 
+				System.out.print(j);
+			}
+			
+		}
+		
+		}		
+		
+	
+	

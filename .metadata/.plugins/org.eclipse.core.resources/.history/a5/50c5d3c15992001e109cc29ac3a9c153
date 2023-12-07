@@ -1,0 +1,34 @@
+package javaBasic.ch01.section15;
+
+public class DatatypeEx {
+
+	public static void main(String [] args) {
+		// TODO Auto-generated method stub
+		/* 자료형 - 기본형(정수형 byte, short, int, long, 실수형 float, double 논리형 boolean 문자형 char) 
+		 * 참조형
+		p.39
+		 */
+		byte b1 = 127;   				//-128~127
+		System.out.println(b1);
+
+		short s1 = 32767; 				//-32768~32767
+		System.out.println(s1);
+		
+		int i1 = -2147483648; 			// -214748648~214748647
+		System.out.println(i1);
+		
+		long l1  
+				
+		
+		byte b2 = 10;				//+연산자는 int형으로 처리함, byte(1byte), int(4byte) = int형임
+		byte b3 = 20;
+		//byte b23 = b2 + b3; 		//에러
+		int b24 = b2 + b3;
+		
+		
+				
+				
+				
+	}
+
+}

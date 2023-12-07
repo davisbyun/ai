@@ -1,0 +1,32 @@
+package javaBasic2.ch05.sec03;
+
+public class 이차원배열 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[][] intArr1 = { {1,2},{2,3},{3,4} };
+		String[][] strArr = {  {"a","b","c"},{"d","e","f"} };
+		boolean[][] booArr = {{false,true},{false,true},{true,true}};
+		
+		//2차원 배열의 값을 출력하기
+		System.out.println(intArr1[2][1]); //4
+		
+		//e츨략
+		System.out.println(strArr[1][1]); //e
+		
+		//true
+		System.out.println(booArr[3][0]); //true
+		
+		//배열안에 모든 갓 출력하기
+		for(i = 0; i<intArr1.length; i++) {
+			for(j = 0; j<intArr1[i]; j++) {
+			System.out.print(intArr1[i][j]+ "  ");	
+			}
+			}
+		}
+		
+		
+	}
+
+}

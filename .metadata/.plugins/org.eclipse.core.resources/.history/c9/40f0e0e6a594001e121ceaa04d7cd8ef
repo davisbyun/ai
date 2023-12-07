@@ -1,0 +1,10 @@
+package javaBasic2.ch05.sec03;
+
+public class 열거형예제 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

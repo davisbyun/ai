@@ -1,0 +1,25 @@
+package javaBasic.ch03.sec01;
+
+public class 변수복습 {
+
+	public static void main(String[] args) {
+	
+		String verhicleName = "산타페"; 	//차량명
+		int totalAcut = 35000000; 		//차량총액
+		int preAcut = 15000000;			//인도금
+		int originMon = 20000000;		//할부원금
+		int priods = 36;			//상환기간
+		int acutPerMon = 55555556; 		//월납입금
+						
+		
+		String verhicleName1 = "코란도"; 	//차량명
+		int totalAcut1 = 24000000; 		//차량총액
+		int preAcut1 = 5000000;			//인도금
+		int originMon1 = 19000000;		//할부원금
+		int priods1 = 24;			//상환기간
+		int acutPerMon1 = 79166667; 	//월납입금		
+				
+		
+	}
+
+}

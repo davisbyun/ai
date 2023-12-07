@@ -1,0 +1,43 @@
+package javaBasic3;
+
+//학교에 대한 것들을 만들어준다.
+public class Student {
+
+	
+	//Field
+	
+	String 학번;
+	String 이름;
+	String 학과;
+	int 점수;
+	String 전화번호;
+	
+	//Method
+	
+		public Student(String 학번, String 이름, String 학과, int 점수, String 전화번호) {
+			// 생성자 == 클래스 이름과 똑같고 객체화 (힙메모리에 올라갈 때) 될 때 자동으로 실해된다.
+			//Student s1 = new Student("230101","홍길동","AI",100,"010-123-1234");
+			
+			학번 = String;
+			이름 = String2;
+			학과 = String3;
+			점수 = i;
+			전화번호 = String4;
+			
+		}
+		
+		//점수계산하기
+		int 점수계산() { return 0; }
+		//성적출력하기
+		void 성적출력하기() {}  //void 반환값을 요구하지 않는다.
+		//입력하기
+		void 입력하기() {}
+		String 장학금대상() { return "홍길동"; }
+		//합격 여부 구하기
+		boolean 합격여부구하기 () {   return true;  } 
+		
+	//Constructor(생성자)
+	
+	}
+
+

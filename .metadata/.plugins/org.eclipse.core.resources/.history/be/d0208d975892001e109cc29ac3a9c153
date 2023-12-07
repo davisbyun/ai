@@ -1,0 +1,16 @@
+package javaBasic.ch01.section15;
+
+public class DatatypeEx {
+
+	public static void main(String [] args) {
+		// TODO Auto-generated method stub
+		/* 자료형 - 기본형(정수형 byte, short, int, long, 실수형 float, double 논리형 boolean 문자형 char) 
+		 * 참조형
+		p.39
+		 */
+		byte b1 = 200;
+		System.out.println(b1);
+
+	}
+
+}

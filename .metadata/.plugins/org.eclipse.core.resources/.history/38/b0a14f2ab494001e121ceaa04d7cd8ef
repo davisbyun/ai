@@ -1,0 +1,25 @@
+package t01.ch01.sec01;
+
+import java.util.Scanner;
+
+public class 학생점수분석 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int menu = 1; //선택변수
+		
+		while(menu != 5) {		//메뉴가 5가 아니면 종료 
+			
+			System.out.println("----------------------------------------------------");
+			System.out.println("1. 학생수 | 2. 점수입력 | 3. 점수리스트 | 4. 분석 | 5. 종료 ");
+			System.out.println("----------------------------------------------------");
+			System.out.println("선택>");
+			menu = sc.nextInt();
+		}
+		
+	}
+
+}

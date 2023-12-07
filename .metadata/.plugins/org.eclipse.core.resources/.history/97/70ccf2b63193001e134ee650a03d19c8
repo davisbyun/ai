@@ -1,0 +1,11 @@
+package javaBasic.ch04.sec01;
+
+public class if문 {
+
+	public static void main(String[] args) {
+		//만약에 조건이 참이면 거짓이면
+		
+		
+	}
+
+}

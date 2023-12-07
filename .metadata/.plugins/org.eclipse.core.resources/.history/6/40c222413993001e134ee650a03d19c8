@@ -1,0 +1,30 @@
+package javaBasic.ch04.sec01;
+
+import java.util.Scanner;
+
+public class Switch문 {
+
+	public static void main(String[] args) {
+		// 'A'락 입력하면 Apple라고 출력
+		// 'B'락 입력하면 Bear라고 출력
+		// 'C'락 입력하면 Cat라고 출력
+		
+		//키보드입력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("영어 첫글자 일력하기(A~C)");
+		String word = sc.next();
+		System.out.println(word);
+		
+		if (word == "A") {
+			System.out.println("Apple");
+		}
+		else if (word == "B" ) {
+			System.out.println("Bear");
+		}
+		else if (word == "C" ) {
+			System.out.println("Cat");
+		}
+		
+	}
+	
+}

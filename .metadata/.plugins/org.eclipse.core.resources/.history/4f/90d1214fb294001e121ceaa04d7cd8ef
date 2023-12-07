@@ -1,0 +1,17 @@
+package javaBasic2.ch05.sec01;
+
+public class 참조타입 {
+
+	public static void main(String[] args) {
+		
+		int n = 10; //스텍 공간에 올라감
+		Scanner sc = new Scanner(System.in); //힙메모리에 Scanner라는 클래스를 올려주세요
+		//자바는 힙메모리 공간에 접근 못함
+		//힙메모리에 주소를 
+		
+		//변수형식 자료명 변수명
+		Student st = new Student();
+		
+	}
+
+}

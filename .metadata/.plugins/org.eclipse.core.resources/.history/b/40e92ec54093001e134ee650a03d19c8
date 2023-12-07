@@ -1,0 +1,42 @@
+package javaBasic.ch04.sec01;
+
+public class While문 {
+
+	public static void main(String[] args) {
+		//반복문
+		//형식 while(조건){참이면 수행할 문장}
+		//1~100까지 출력하기
+		//숫자변수 만들어 1출력하기 --> 변수 +1  
+		int number = 1;
+		
+		while( number < 100  ) { 
+			number++; 
+			System.out.println(number); 
+			}		
+		
+		//10,20,30...100
+		
+		int number2 = 10;
+		while ( number2 <= 100  ) {
+			System.out.println(number2);
+			number2 += 10;
+		}
+		
+		//100, 90, 80, 70... -10, -20
+		
+		int number3 = 100;
+		while (number3 >= -30) {
+			System.out.println(number3);
+			number3 -= 10; 
+		}
+		
+		//1~20까지 출력해주세요.
+int number4 = 1;
+		
+		while( number <= 20  ) { 
+			number4++; 
+			System.out.println(number4); 
+			}		
+	}
+
+}

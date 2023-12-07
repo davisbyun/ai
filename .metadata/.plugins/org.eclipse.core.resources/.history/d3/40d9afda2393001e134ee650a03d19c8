@@ -1,0 +1,32 @@
+package javaBasic.ch03.sec02;
+
+public class 확인문제 {
+
+	public static void main(String[] args) {
+		
+		int x = 10;
+		int y = 20;
+		int z = (++x) + (y--);   //11 - 20 = 31 
+		
+		System.out.println(z);
+		
+		
+		int score = 85;
+		String result = (!(score>90)) ? "가" : "나";   //가 !부정  !!긍정
+		System.out.println(result);
+		
+		int pencils = 534;
+		int student = 30;
+		
+		int penperstu = (pencils / student );
+		System.out.println(penperstu);
+		
+		int penperstud = (pencils % student );
+			System.out.println(penperstud);
+
+		int value = 365;
+		System.out.println(int)(value/100)*100);
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package javaBasic3;
+
+public class 자동차판매현황 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

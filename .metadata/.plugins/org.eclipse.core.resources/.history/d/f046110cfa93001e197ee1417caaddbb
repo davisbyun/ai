@@ -1,0 +1,10 @@
+package javaBasic2.ch05.sec01;
+
+public class Teacher {
+
+	
+	String name;
+	string dept;
+	int pay;
+	
+}

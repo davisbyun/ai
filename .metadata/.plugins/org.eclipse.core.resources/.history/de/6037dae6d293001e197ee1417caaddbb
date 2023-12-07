@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Jtest {
+
+	public static void main(String[] args) {
+		// 입력을 받는다. 키보드 입력할 수 있는 클래스 사용
+		Scanner sc = new Scanner(System.in); 
+		System.out.println("--화씨를 섭씨로 바꾸기---");
+		System.out.println("문자를 입력하세요? (c , f)");
+		String word = sc.next();
+		System.out.println("바꾸려는 온도를 입력하세요");
+		int temperature = sc.nextInt();
+		
+		//조건 문자가 "C"인지 "F"
+		
+		double result = 0.0;
+		if(word.equals("C") || word.equals("c")) {
+			//섭씨를 화씨로 고치기
+			//F = (9.0 / 5.0 ) *C + 32
+			//C = (5.0 / 9.0) *(F - 32)
+		result = ( 9.0 / 5.0 ) * temperature + 32;
+		} else if(word.equals("F") || word.equals("f")) {
+			//화씨를 섭씨로 고치기
+			result = (5.0 / 9.0) *(temperature - 32);
+		};
+		
+		//4단계 결과 출력하기
+		System.out.println("정답은 " + result);
+		
+		}
+		
+		
+			
+
+			
+			
+		}
+		
+				
+		
+	}
+
+}

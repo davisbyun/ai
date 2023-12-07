@@ -1,0 +1,28 @@
+package javaBasic3;
+
+public class Teacher {
+	
+	//Field
+	String 코드;
+	String 이름;
+	String 전공;
+	String 시수;
+	int 급여;
+	String 구분;
+	
+	
+	//Method
+	int[] 성적처리하기 () {
+	 return null;
+	 
+	String[] 레포트검사하기 () {
+	 return null;
+	
+	void 수업하기() {}
+	void 휴강하기() {}
+	
+	 
+	
+	}
+	
+}

@@ -1,0 +1,10 @@
+package t01.ch01.sec01;
+
+public class 학생점수분석 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

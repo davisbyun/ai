@@ -1,0 +1,36 @@
+package javaBasic2.ch05.sec03;
+
+public class 문자열추출 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String title = "자바프래로그래밍"; //문자열 객체
+		String title2 = new String("자바프로그래밍");
+		
+		System.out.println(title2.length());
+		System.out.println(title2.charAt(6));   //밍 (문자열의 인덱스는 0부터 시작)
+		
+		title2 = title2.replace("자바", "java");  //문자열 변경
+		System.out.println(title2);
+		
+		System.out.println(title2.substring(4, 8)); //프로그래
+		//자바 추출
+		System.out.println(title.substring(0, 2));  //자바
+
+		//밍의 인덱스
+		System.out.println(title.indexOf("밍"));
+		System.out.println(title.indexOf("래", 4));  //인덱스의 4번 이후에 레를 찾아라.  
+		
+		String names = "홍길동,이순신,최민영";
+		String[] nameArr = names.split(",");
+			for(int i = 0; i<nameArr.length; i++) {
+		System.out.println(nameArr[i]);
+		}
+		
+		String fruit = "사과-배-귤-바나나";
+		String[] nameArr1 = names.split("-");
+			for(int i = 0; i<nameArr1.length; i++);
+		System.out.println(nameArr[i]);	
+	}
+}

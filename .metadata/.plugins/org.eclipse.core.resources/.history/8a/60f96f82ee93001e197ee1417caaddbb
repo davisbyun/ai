@@ -1,0 +1,45 @@
+package javaBasic.ch04.sec01;
+
+import java.util.Scanner;
+
+public class 성적출력 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("성적확인");
+		System.out.println("메뉴를 입력하세요? ");
+		String menu = sc.nextLine();		
+		
+		String name = null;
+		int point = 0;
+		
+		while(!menu.equals("") ) {
+			System.out.println("------------------------------------");
+			System.out.println("1.학생명 | 2.점수 | 3.출력 | 4.종료 | ");
+			System.out.println("------------------------------------");
+			System.out.println("선택>");
+			menu = sc.nextLine();
+		}		
+		
+		
+		switch(menu) {
+			case "1" : System.out.println("학생명>");
+						name = sc.next();
+						sc.nextLine();
+						break; //switch문을 빠져나가라.
+						
+			case "2" : System.out.println("점수>"); 
+						point = sc.nextInt();
+						sc.nextLine();
+						break;
+			case "3" : System.out.println("출력>");
+						break;	
+			case "4" : System.out.println("프로그램종료");
+			default : System.out.println("메뉴를 잘못 누르셨어요. 다시"); 
+		}	
+		
+		}
+	}
+

@@ -1,0 +1,14 @@
+package javaBasic3;
+
+
+
+public class 클래스개념 {
+
+	public static void main(String[] args) {
+		// 객체생성하자마자 값을 바로 넣어주기
+		Student s1 = new Student("230101","홍길동","AI",100,"010-123-1234");
+		Teacher t1 = new Teacher("A32","정현희","컴공",1000000,"전임",20);
+
+	}
+
+}

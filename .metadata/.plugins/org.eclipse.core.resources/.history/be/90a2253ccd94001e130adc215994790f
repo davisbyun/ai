@@ -1,0 +1,35 @@
+package javaBasic3;
+
+public class Teacher {
+	
+	//Field(member)
+	String 코드;
+	String 이름;
+	String 전공;
+	String 시수;
+	int 급여;
+	String 구분;
+	
+	
+	public Teacher(String 교사코드, String 성함, String 전공명, int 급여, String 구분, int 시수) {
+		// TODO Auto-generated constructor stub
+		//Teacher t1 = new Teacher("A32","정현희","컴공",1000000,"전임",20);
+		this.코드 = 교사코드;
+		this.이름 = 성함;
+		this.전공 = 전공명;
+		this.급여 = 급여; //Field 에 있는 급여로 지정하고 싶다. this는 맴버필드의 변수를 지정하고 싶는 표현 
+		this.구분 = 구분;
+		this.시수 = 시수;
+		
+	}
+
+	//Method
+	int[] 성적처리하기 () { return null; }
+	 
+	String[] 레포트검사하기 () {	 return null; }
+	
+	void 수업하기() {}
+	void 휴강하기() {}
+	
+		
+}

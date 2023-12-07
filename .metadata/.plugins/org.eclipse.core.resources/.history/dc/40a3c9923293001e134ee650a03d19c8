@@ -1,0 +1,23 @@
+package javaBasic.ch04.sec01;
+
+public class if문 {
+
+	public static void main(String[] args) {
+		//만약에 조건이 참이면 거짓이면
+		//90~100 "A" 89~80 "B"
+		
+		int score = 87;
+		if(score >= 90) {
+			System.out.println("A");
+			
+		if( 80 <= score && score <= 89) { 
+			System.out.println("B");	
+			
+		if( 70 <= score && score <= 79) { 
+			System.out.println("C");		
+		
+		
+		
+	}
+
+}

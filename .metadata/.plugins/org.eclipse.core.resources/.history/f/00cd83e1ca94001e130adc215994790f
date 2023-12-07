@@ -1,0 +1,27 @@
+package javaBasic3;
+
+public class Teacher {
+	
+	//Field
+	String 코드;
+	String 이름;
+	String 전공;
+	String 시수;
+	int 급여;
+	String 구분;
+	
+	
+	public Teacher(String string, String string2, String string3, int i, String string4, int j) {
+		// TODO Auto-generated constructor stub
+	}
+
+	//Method
+	int[] 성적처리하기 () { return null; }
+	 
+	String[] 레포트검사하기 () {	 return null; }
+	
+	void 수업하기() {}
+	void 휴강하기() {}
+	
+		
+}

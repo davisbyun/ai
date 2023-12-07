@@ -1,0 +1,14 @@
+package javaBasic.ch03.sec02;
+
+public class 논리연산자 {
+
+	public static void main(String[] args) {
+		boolean b1 = true;
+		boolean b2 = false;
+		
+		System.out.println(b1 && b2);   // && 그리고 둘 다 참일 때만 참
+		System.out.println(b1 || b2);   // || 또는 둘 중 하나만 참일 때 참
+		
+	}
+
+}

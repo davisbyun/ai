@@ -1,0 +1,40 @@
+package javaBasic.ch04.sec05;
+
+public class While문연습 {
+
+	public static void main(String[] args) {
+		// 2 4 6 8 10 출력해보기
+		// 2를 정수형 변수에 넣기
+		// 정수형 변수를 2씩 더한다
+		// 10이 넘으면 종료한다.
+		
+		int n = 2;
+		while(n<10) {
+			System.out.println(n);
+			n= n + 2;
+			
+			
+		// do ~while 문	
+			
+		//do { }//반복할 내용	
+		//while();
+			
+		int n2 = 1;
+		do {
+			System.out.println(n2);
+			n2++;
+		}
+		while(n2<=10);
+		
+		//10, 9, 8...1
+		
+		int n3 = 10;
+		do {
+			System.out.println(n3);
+			--n3;
+		}
+		while(n3<=1);
+		
+		}
+	}
+}

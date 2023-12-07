@@ -1,0 +1,10 @@
+package javaBasic.ch01.section15;
+
+public class DatatypeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

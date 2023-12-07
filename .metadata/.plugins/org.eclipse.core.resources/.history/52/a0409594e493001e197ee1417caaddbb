@@ -1,0 +1,10 @@
+package javaBasic.ch04.sec01;
+
+public class 은행예금 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package javaBasic.ch01.sec12;
+
+public class Calcuculator {
+
+	public static void main(String[] args) {
+			
+		String name;
+		name = "홍길동";
+		
+		int basicPay = 50000;
+		String phoneNumber = "010-0000-0000";
+		String accountNumber = "국민 123-12-1234";
+		String dept = "알바생"; //직급
+		boolean sex = true; //남자
+		double tex = 0.03; //세금 요율
+		
+		//출력
+		
+		System.out.println("1번 알바 정보 : " + name + " " + basicPay + " " + phoneNumber + " ");
+		System.out.println(accountNumber + " " + dept + " " + sex + " " + tex +" "); 
+		
+		
+		String name;
+		name = "이순신";
+		
+		int basicPay = 20000;
+		String phoneNumber = "010-234-4567";
+		String accountNumber = "국민 321-32-4321";
+		String dept = "알바생"; //직급
+		boolean sex = true; //남자
+		double tex = 0.03; //세금 요율
+		
+		//출력
+		
+		System.out.println("2번 알바 정보 : " + name + " " + basicPay + " " + phoneNumber + " ");
+		System.out.println(accountNumber + " " + dept + " " + sex + " " + tex +" "); 
+		
+		
+		
+		
+				
+				
+		
+		
+				
+		
+		
+	}	
+		
+		
+}
+
+

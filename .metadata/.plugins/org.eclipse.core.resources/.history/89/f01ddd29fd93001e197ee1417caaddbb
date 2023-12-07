@@ -1,0 +1,10 @@
+package javaBasic2.ch05.sec02;
+
+public class 참조타입2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

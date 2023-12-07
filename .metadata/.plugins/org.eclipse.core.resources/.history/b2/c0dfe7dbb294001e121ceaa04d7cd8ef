@@ -1,0 +1,36 @@
+package javaBasic.ch04.sec01;
+
+public class 확인문제4장 {
+
+	public static void main(String[] args) {
+		//p138. 문제3
+		//1~100cnffur
+		int sum3 = 0; //3의 배수의 합을 넣을 변수
+		for(int i =1; i<=100; i++) {
+			if(i%3 == 0) {
+				sum3 = sum3 + i;
+			}
+			System.out.println("1부터 100까지 3의 배수 합은 : " + sum3 );
+		//5번
+			for(int x=1 ; x<=10 ; x++) {
+				for(int y=1 ; y<=10; y++) {
+					if(4*x +5*y ==60 ) {
+						System.out.println("x= "+ x +"  "+ "y= "+ y);
+					}
+				}
+			}
+		//6번
+			for(int i=1; i<=5; i++)
+				for(int j = 1; j <= i ; j++) {
+					Sysou
+					
+				}
+			
+			
+			
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package javaBasic.ch03.sec02;
+
+public class Operator01 {
+
+	public static void main(String[] args) {
+		int number = 10;
+		//number = number + 1; -->number++°ú °°À½
+		number++;
+		System.out.println(number);
+		
+		number = number - 1; 
+		System.out.println(number);		
+		
+
+	}
+
+}
