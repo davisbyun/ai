@@ -1,90 +1,184 @@
 package javaBasic3;
 
-//ÇĞ±³¿¡ ´ëÇÑ °ÍµéÀ» ¸¸µé¾îÁØ´Ù.
+
+//í•™êµì— ëŒ€í•œ ê²ƒì„ ë§Œë“¤ê¸°
 public class Student {
-
 	
-	//Field
-	
-	String ÇĞ¹ø;
-	String ÀÌ¸§;
-	String ÇĞ°ú;
-	int Á¡¼ö;
-	String ÀüÈ­¹øÈ£;
+	String í•™ë²ˆ;
+	String ì´ë¦„;
+	String í•™ê³¼;
+	int ì ìˆ˜;
+	String ì „í™”ë²ˆí˜¸;
 	
 	
-	//Constructor (»ı¼ºÀÚ)
-		public Student(String ÇĞ¹ø, String ÀÌ¸§, String ÇĞ°ú, int Á¡¼ö, String ÀüÈ­¹øÈ£) {
-			// »ı¼ºÀÚ == Å¬·¡½º ÀÌ¸§°ú ¶È°°°í °´Ã¼È­ (Èü¸Ş¸ğ¸®¿¡ ¿Ã¶ó°¥ ¶§) µÉ ¶§ ÀÚµ¿À¸·Î ½ÇÇØµÈ´Ù.
-			//Student s1 = new Student("230101","È«±æµ¿","AI",100,"010-123-1234");
-			//Field ¿¡ ÀÖ´Â ±Ş¿©·Î ÁöÁ¤ÇÏ°í ½Í´Ù. this.´Â ¸É¹öÇÊµåÀÇ º¯¼ö¸¦ ÁöÁ¤ÇÏ°í ½Í´Â Ç¥Çö
-			
-			this.ÇĞ¹ø = ÇĞ¹ø;
-			this.ÀÌ¸§ = ÀÌ¸§;
-			this.ÇĞ°ú = ÇĞ°ú;
-			this.Á¡¼ö = Á¡¼ö;
-			this.ÀüÈ­¹øÈ£ = ÀüÈ­¹øÈ£;
-			
-		}
-		
-	//Method
-		
-		public Student() {
-			// TODO Auto-generated constructor stub
-		}
-
-		//Á¡¼ö°è»êÇÏ±â
-		int Á¡¼ö°è»ê() { return 0; }
-		public String getÇĞ¹ø() {
-			return ÇĞ¹ø;
-		}
-
-		public void setÇĞ¹ø(String ÇĞ¹ø) {
-			this.ÇĞ¹ø = ÇĞ¹ø;
-		}
-
-		public String getÀÌ¸§() {
-			return ÀÌ¸§;
-		}
-
-		public void setÀÌ¸§(String ÀÌ¸§) {
-			this.ÀÌ¸§ = ÀÌ¸§;
-		}
-
-		public String getÇĞ°ú() {
-			return ÇĞ°ú;
-		}
-
-		public void setÇĞ°ú(String ÇĞ°ú) {
-			this.ÇĞ°ú = ÇĞ°ú;
-		}
-
-		public int getÁ¡¼ö() {
-			return Á¡¼ö;
-		}
-
-		public void setÁ¡¼ö(int Á¡¼ö) {
-			this.Á¡¼ö = Á¡¼ö;
-		}
-
-		public String getÀüÈ­¹øÈ£() {
-			return ÀüÈ­¹øÈ£;
-		}
-
-		public void setÀüÈ­¹øÈ£(String ÀüÈ­¹øÈ£) {
-			this.ÀüÈ­¹øÈ£ = ÀüÈ­¹øÈ£;
-		}
-
-		//¼ºÀûÃâ·ÂÇÏ±â
-		void ¼ºÀûÃâ·ÂÇÏ±â() {}  //void ¹İÈ¯°ªÀ» ¿ä±¸ÇÏÁö ¾Ê´Â´Ù.
-		//ÀÔ·ÂÇÏ±â
-		void ÀÔ·ÂÇÏ±â() {}
-		String ÀåÇĞ±İ´ë»ó() { return "È«±æµ¿"; }
-		//ÇÕ°İ ¿©ºÎ ±¸ÇÏ±â
-		boolean ÇÕ°İ¿©ºÎ±¸ÇÏ±â () {   return true;  } 
-		
+   //Student st1 = new Student("230101", "í™ê¸¸ë™", "AI", 100, "010-123-1234" );
 	
-	
+	public String getí•™ë²ˆ() {
+		return í•™ë²ˆ;
 	}
 
+	public void setí•™ë²ˆ(String í•™ë²ˆ) {
+		this.í•™ë²ˆ = í•™ë²ˆ;
+	}
 
+	public String getì´ë¦„() {
+		return ì´ë¦„;
+	}
+
+	public void setì´ë¦„(String ì´ë¦„) {
+		this.ì´ë¦„ = ì´ë¦„;
+	}
+
+	public String getí•™ê³¼() {
+		return í•™ê³¼;
+	}
+
+	public void setí•™ê³¼(String í•™ê³¼) {
+		this.í•™ê³¼ = í•™ê³¼;
+	}
+
+	public int getì ìˆ˜() {
+		return ì ìˆ˜;
+	}
+
+	public void setì ìˆ˜(int ì ìˆ˜) {
+		this.ì ìˆ˜ = ì ìˆ˜;
+	}
+
+	public String getì „í™”ë²ˆí˜¸() {
+		return ì „í™”ë²ˆí˜¸;
+	}
+
+	public void setì „í™”ë²ˆí˜¸(String ì „í™”ë²ˆí˜¸) {
+		this.ì „í™”ë²ˆí˜¸ = ì „í™”ë²ˆí˜¸;
+	}
+
+	//ìƒì„±ì == í´ë˜ìŠ¤ ì´ë¦„ê³¼ ë˜‘ê°™ê³  ê°ì²´í™”(í™ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°ˆÂ‹Âš)ë ë•Œ ìë™ìœ¼ë¡œ ì‹¤í–‰ëœë‹¤.  
+	public Student(String í•™ë²ˆ, String ì´ë¦„, String í•™ê³¼, int ì ìˆ˜, String ì „í™”ë²ˆí˜¸) {
+ 		 this.í•™ë²ˆ = í•™ë²ˆ;
+		 this.ì´ë¦„ = ì´ë¦„;
+		 this.í•™ê³¼ = í•™ê³¼;
+		 this.ì ìˆ˜ = ì ìˆ˜;
+		 this.ì „í™”ë²ˆí˜¸ = ì „í™”ë²ˆí˜¸;
+		 
+	}
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+	//ì ìˆ˜ê³„ì‚°í•˜ê¸°
+	int ì ìˆ˜ê³„ì‚°() {
+		
+		return 0;
+	}
+	
+	void ì„±ì ì¶œë ¥í•˜ê¸°(){
+		
+	}
+	
+	void ì…ë ¥í•˜ê¸°(){
+		
+	}
+   
+	String ì¥í•™ê¸ˆëŒ€ìƒì(){
+		return "í™ê¸¸ë™";
+	}
+	
+	boolean í•©ê²©ì—¬ë¶€êµ¬í•˜ê¸°(){
+	   return true;	
+	}
+	
+}
+
+
+//package javaBasic3;
+//
+////í•™êµì— ëŒ€í•œ ê²ƒë“¤ì„ ë§Œë“¤ì–´ì¤€ë‹¤.
+//public class Student {
+//
+//	
+//	//Field
+//	
+//	String í•™ë²ˆ;
+//	String ì´ë¦„;
+//	String í•™ê³¼;
+//	int ì ìˆ˜;
+//	String ì „í™”ë²ˆí˜¸;
+//	
+//	
+//	//Constructor (ìƒì„±ì)
+//		public Student(String í•™ë²ˆ, String ì´ë¦„, String í•™ê³¼, int ì ìˆ˜, String ì „í™”ë²ˆí˜¸) {
+//			// ìƒì„±ì == í´ë˜ìŠ¤ ì´ë¦„ê³¼ ë˜‘ê°™ê³  ê°ì²´í™” (í™ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°ˆ ë•Œ) ë  ë•Œ ìë™ìœ¼ë¡œ ì‹¤í•´ëœë‹¤.
+//			//Student s1 = new Student("230101","í™ê¸¸ë™","AI",100,"010-123-1234");
+//			//Field ì— ìˆëŠ” ê¸‰ì—¬ë¡œ ì§€ì •í•˜ê³  ì‹¶ë‹¤. this.ëŠ” ë§´ë²„í•„ë“œì˜ ë³€ìˆ˜ë¥¼ ì§€ì •í•˜ê³  ì‹¶ëŠ” í‘œí˜„
+//			
+//			this.í•™ë²ˆ = í•™ë²ˆ;
+//			this.ì´ë¦„ = ì´ë¦„;
+//			this.í•™ê³¼ = í•™ê³¼;
+//			this.ì ìˆ˜ = ì ìˆ˜;
+//			this.ì „í™”ë²ˆí˜¸ = ì „í™”ë²ˆí˜¸;
+//			
+//		}
+//		
+//	//Method
+//		
+//		public Student() {
+//			// TODO Auto-generated constructor stub
+//		}
+//
+//		//ì ìˆ˜ê³„ì‚°í•˜ê¸°
+//		int ì ìˆ˜ê³„ì‚°() { return 0; }
+//		public String getí•™ë²ˆ() {
+//			return í•™ë²ˆ;
+//		}
+//
+//		public void setí•™ë²ˆ(String í•™ë²ˆ) {
+//			this.í•™ë²ˆ = í•™ë²ˆ;
+//		}
+//
+//		public String getì´ë¦„() {
+//			return ì´ë¦„;
+//		}
+//
+//		public void setì´ë¦„(String ì´ë¦„) {
+//			this.ì´ë¦„ = ì´ë¦„;
+//		}
+//
+//		public String getí•™ê³¼() {
+//			return í•™ê³¼;
+//		}
+//
+//		public void setí•™ê³¼(String í•™ê³¼) {
+//			this.í•™ê³¼ = í•™ê³¼;
+//		}
+//
+//		public int getì ìˆ˜() {
+//			return ì ìˆ˜;
+//		}
+//
+//		public void setì ìˆ˜(int ì ìˆ˜) {
+//			this.ì ìˆ˜ = ì ìˆ˜;
+//		}
+//
+//		public String getì „í™”ë²ˆí˜¸() {
+//			return ì „í™”ë²ˆí˜¸;
+//		}
+//
+//		public void setì „í™”ë²ˆí˜¸(String ì „í™”ë²ˆí˜¸) {
+//			this.ì „í™”ë²ˆí˜¸ = ì „í™”ë²ˆí˜¸;
+//		}
+//
+//		//ì„±ì ì¶œë ¥í•˜ê¸°
+//		void ì„±ì ì¶œë ¥í•˜ê¸°() {}  //void ë°˜í™˜ê°’ì„ ìš”êµ¬í•˜ì§€ ì•ŠëŠ”ë‹¤.
+//		//ì…ë ¥í•˜ê¸°
+//		void ì…ë ¥í•˜ê¸°() {}
+//		String ì¥í•™ê¸ˆëŒ€ìƒ() { return "í™ê¸¸ë™"; }
+//		//í•©ê²© ì—¬ë¶€ êµ¬í•˜ê¸°
+//		boolean í•©ê²©ì—¬ë¶€êµ¬í•˜ê¸° () {   return true;  } 
+//		
+//	
+//	
+//	}
+//
+//

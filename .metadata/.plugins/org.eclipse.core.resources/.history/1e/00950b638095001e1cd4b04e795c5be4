@@ -1,0 +1,10 @@
+package javaBasic3.ch06.sec06.sec05;
+
+public class SingleToneExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

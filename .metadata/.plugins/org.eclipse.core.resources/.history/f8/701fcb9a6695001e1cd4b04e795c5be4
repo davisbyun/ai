@@ -1,0 +1,48 @@
+package javaBasic3.ch06.sec01;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class 대출현황표_메인 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Date now = new Date(); //현제 날짜를 구해주는 객체
+		String nowTime = now.toString(); //날짜를 문자열로 바꾸어 준다
+		System.out.println(nowTime); //출력
+		
+		SimpleDateFormat sdf =  new SimpleDateFormat("yyyy-MM-dd");
+		System.out.println(sdf.format(now));
+		
+		//동일한 객체를 생성하고 내용만 다를 때, 배열 사용
+		
+		
+				
+		대출현황표 d1 = new 대출현황표("j02-38","이민주", new Date(), "주택자금대출", 27000000, 48);
+		대출현황표 d2 = new 대출현황표("Y04-15","진영태", new Date(), "예부적금담보대출", 30000000, 36);
+		대출현황표 d3 = new 대출현황표("M02-06","최철식", new Date(), "무보증신용출", 27000000, 48);
+		대출현황표 d4 = new 대출현황표("j02-31","민승렬", new Date(), "주택자금대출", 27000000, 48);
+		
+		
+		 대출현황표[] dArr = { 
+				 new 대출현황표("j02-38","이민주", new Date(), "주택자금대출", 27000000, 48),
+				 new 대출현황표("Y04-15","진영태", new Date(), "예부적금담보대출", 30000000, 36),
+				 new 대출현황표("M02-06","최철식", new Date(), "무보증신용출", 27000000, 48),
+				 new 대출현황표("j02-31","민승렬", new Date(), "주택자금대출", 27000000, 48)
+		 }
+		
+		
+		//Field
+		
+		
+		//Constructor
+		
+		
+		//Method
+		
+		
+		
+	}
+
+}

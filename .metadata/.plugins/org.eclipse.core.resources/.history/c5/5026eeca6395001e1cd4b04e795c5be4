@@ -1,0 +1,28 @@
+package javaBasic3.ch06.sec01;
+
+import java.util.Date;
+
+public class 대출현황표_메인 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Date now = new Date();
+		String nowTime = now.toString();
+		System.out.println(nowTime);
+		
+		new 대출현황표("j02-38","이민주",)
+		
+		//Field
+		
+		
+		//Constructor
+		
+		
+		//Method
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package javaBasic3.ch06.sec06.sec06;
+
+public class 생성자연습 {
+
+	//생성자가 하나도 없으면 자바 컴파일러가 자동으로 1개 만듬
+	
+	public 생성자연습(String string) {}
+	public 생성자연습() {}
+	public 생성자연습(int i, boolean b) {}
+	
+	
+}

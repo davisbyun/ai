@@ -1,0 +1,25 @@
+package javaBasic3.ch06.sec03;
+
+public class A {
+
+		private int a = 10;
+		int b = 20;
+		public int c = 30;
+		
+		private void a1() {
+			
+			
+		}
+		
+		
+		void b1() {
+			
+		}
+		
+		public void c1() {
+			
+			
+		}
+
+}
+

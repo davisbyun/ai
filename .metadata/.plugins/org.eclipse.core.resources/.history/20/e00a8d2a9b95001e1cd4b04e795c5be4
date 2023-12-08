@@ -1,0 +1,16 @@
+package javaBasic3.ch06.sec07;
+
+public class 확인문제6_16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Printer printer = new Printer();
+		printer.println(10);
+		printer.println(true);
+		printer.println(5,7);
+		printer.println("홍길동");
+	
+	}
+
+}

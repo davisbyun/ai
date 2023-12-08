@@ -1,0 +1,18 @@
+package javaBasic3.ch06.sec02;
+
+public class 정적클래스 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	static void m1() {
+		System.out.println("정적 메소드입니다.");
+	}
+	
+	void m2() {
+		System.out.println("인스턴스 메소드입니다.");
+
+	}
+}

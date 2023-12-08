@@ -1,0 +1,23 @@
+package javaBasic3.ch06.sec03;
+
+import javaBasic3.ch06.sec04.AA;
+
+public class 접근제한자 {
+
+	public static void main(String[] args) {
+		A aAdd = new A(); //객체화 
+		
+		// System.out.println(aAdd.a);  에러 private는 다른 클래스에서 못씀 
+		System.out.println(aAdd.b); //같은 페키지 sec03, 접근제한자가 defualt 는 같은 패키지는 가능
+		System.out.println(aAdd.c); //public으로서 가능하다.
+		
+		// aAdd.a1();  //에러 private
+		aAdd.b1();
+		aAdd.c1();
+
+		AA aaAdd = new AA();
+		//System.out.println(aaAdd.a); // private 오류
+		System.out.println(aaAdd.b);
+	}
+
+}

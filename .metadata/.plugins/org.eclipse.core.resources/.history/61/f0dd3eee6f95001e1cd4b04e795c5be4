@@ -1,0 +1,10 @@
+package javaBasic3.ch06.sec02;
+
+public class 정적클래스 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

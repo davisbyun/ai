@@ -1,0 +1,17 @@
+package javaBasic3.ch06.sec06.sec05;
+
+public class Singleton {
+	
+	private static Singleton singleton = new Singleton(); //자기 속에서 스스로 객체 생성하여 주소를 생성
+	
+	private Singleton() {
+		//생성자 new하면 실행되는데 private 해서
+		
+		
+	}
+
+	static Singleton getISingleton() {
+		return singleton;
+		
+	}
+}

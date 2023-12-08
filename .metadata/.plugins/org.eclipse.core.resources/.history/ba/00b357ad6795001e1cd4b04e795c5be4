@@ -1,0 +1,18 @@
+package javaBasic3.ch06.sec01;
+
+import java.util.Date;
+
+public class 대출현황표 {
+	
+	//맴버필드 
+	
+	String 대출번호;
+	String 성명;
+	Date 대출일;
+	String 대출종류;
+	int 대출금액;
+	int 기간;
+	
+	
+	
+}

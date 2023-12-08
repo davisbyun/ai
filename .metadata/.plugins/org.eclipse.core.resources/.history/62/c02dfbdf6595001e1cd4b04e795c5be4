@@ -1,0 +1,33 @@
+package javaBasic3.ch06.sec01;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.print.SimpleDoc;
+
+public class 대출현황표_메인 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Date now = new Date(); //전체 날짜를 구해주는 객체
+		String nowTime = now.toString(); //날짜를 문자열로 바꾸어 준다
+		System.out.println(nowTime); //출력
+		
+		SimpleDateFormat sdf =  new SimpleDateFormat("yyyy-MM-dd");
+		System.out.println(sdf.format(now));
+		//new 대출현황표("j02-38","이민주",)
+		
+		//Field
+		
+		
+		//Constructor
+		
+		
+		//Method
+		
+		
+		
+	}
+
+}
