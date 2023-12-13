@@ -1,23 +1,21 @@
 package jabaBasic4.ch07.sec04;
 
-public class AirPlaneExample {
+public class AirplaneExample {
 
 	public static void main(String[] args) {
-		
-		//자식클래스 객체화
-		
-		SuperSonicAirPlane sa = SuperSonicAirPlane();
+		 //자식 객체화
+		SupersonicAirplane sa = new SupersonicAirplane();
 		sa.takeOff();
 		sa.fly();
-		sa.flyMode = SuperSonicAirPlane.SUPERSONIC;
+		sa.flyMode = SupersonicAirplane.SUPERSONIC;
 		sa.fly();
-		sa.flyMode = SuperSonicAirPlane.NORMAL;
+		sa.flyMode = SupersonicAirplane.NORMAL;
 		sa.fly();
-		sa.flyMode = SuperSonicAirPlane.ROUND;
-		sa.fly();
-		sa.flyMode = SuperSonicAirPlane.SLOW;
-		
-		
+		sa.flyMode = SupersonicAirplane.ROUND;
+		sa.fly(); //회전 비행합니다.
+		sa.flyMode = SupersonicAirplane.SLOW;
+		sa.fly(); //천천히 비행합니다.
+		sa.land();
 	}
 
 }
