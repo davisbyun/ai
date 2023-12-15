@@ -6,6 +6,7 @@ public interface RemoteControl {
 	int MAX_VOLUME = 10; // <-- 상수임,  final static 인터페이스는 상수밖에 못들어오므로 생략가능
 	int MIN_VOLUNE = 0;
 	
+	//추상 abstract는 생략 가능
 	void turnOn();
 	void turnOff();
 	void setVolume(int volum);
