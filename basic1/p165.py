@@ -54,7 +54,7 @@ print(sum    ) """
 i=1
 sum =0
 
-while True :
+""" while True :
     i += 1
     if i % 5 != 0:
       continue 
@@ -63,6 +63,8 @@ while True :
     sum += i
     i += 1
 
-print(sum    )    
+print(sum    )     """
+
+
 
 

@@ -335,5 +335,5 @@ print(f"주간 주급: {주간_총_주급} 원") """
 
 sum = 0
 for i in range(100,200,5) :
-  i = i +1
+  i = i + 1
 print(i)  
