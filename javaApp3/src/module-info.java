@@ -1,0 +1,2 @@
+module javaApp3 {
+}
