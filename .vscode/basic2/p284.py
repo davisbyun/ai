@@ -133,21 +133,40 @@ def engQuiz() :
             print("틀렸어요")    
 
 engQuiz( eng_dict )
- """
 
-#심화7-1
-n = int(input("n값을 입력해 주세요"))
+
+#심화7-1 p291
+n = int(input("n값을 입력해 주세요")) #50
 
 def decimalFun(n1) :
-    de = []
+    dL = []
     for i in range (2, n1, 1) :
-        for j in range(2, n1, 1) :
+        x= True
+        for j in range(2, i, 1) :
             if i % i == 0 :
-                de.append(i)
+                x == False
+                break
+            if x :
+              dL.append(i)
             
-    print(de)    
+    return dL    
 
 decimalFun(n)
   
+ """
+
+#7-3
+
+n = int(input("n값을 입력하세요"))
+
+
+def nMul(n) :
+    result = []
+    for i in range(1,n+1) :  #1~10까지
+        result.append(i*i)
+    return result
+
+resultList = nMul(n)    
+print(resultList)
 
 
