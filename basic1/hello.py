@@ -1,8 +1,9 @@
-print("Hello python")
-print(100+20) 
+name = "김콩쥐"
+addr = "부산시 해운대구"
+tel = "010-1234-5678"
+email = "book@inforbook.com"
 
-a=10
-b=5
-c='korea'
-print(a, b, c)
-print(a+b)
+print(name)
+print(addr)
+print(tel)
+print(email)
