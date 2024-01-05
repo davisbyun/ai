@@ -1,0 +1,38 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+html {
+ background-size: cover; 
+}
+body {
+    margin: 0;
+}
+
+#header {
+    z-index : 1;
+    margin: 0 auto; 
+    background-color: rgba(143, 245, 134, 0.8);
+    height: 40px;
+    width: 100%;
+    box-shadow: 0, 0.6px;
+    position:fixed;
+    top: -1px;
+}
+.mainBar {
+  margin: 0 auto;
+  width: 1200px;
+}
+.leftMainBar div {
+    float: left;
+    padding: 9px 10px;
+}
+
+.leftMainBar div a {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+
+.leftMainBar div a:hover {
+  opacity: 50%;
+}
