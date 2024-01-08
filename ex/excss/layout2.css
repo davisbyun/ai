@@ -7,6 +7,65 @@ body {
 }
 .wrap {
   width: 1200px;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+#header {
+  width: 1200px;
+  height: 100px;
+  background-color: #5fcc41;
+}
+#nav1 {
+  width: 600px;
+  height: 100px;
+  background-color: #2fd5e4;
+  float: left;
+}
+#nav2 {
+  width: 600px;
+  height: 100px;
+  background-color: #d956f3;
+  float: left;
+}
+#a {
+  clear: both;
+}
+#aside1 {
+  width: 300px;
+  height: 800px;
+  background-color: #0ca960;
+  float: left;
+}
+#section {
+  width: 600px;
+  height: 800px;
+  background-color: #12767d;
+  float: left;
+}
+#aside2 {
+  width: 300px;
+  height: 800px;
+  background-color: #86bc34;
+  float: left;
+}
+#footer {
+  width: 1200px;
+  height: 200px;
+  background-color: #9d7de6;
+  /* 바로 위에 있는 section에 float:left가 있어서 css가 height,색깔 안된다. */
+  clear: both;
+}
+
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #aaef78;
+}
+.wrap {
+  width: 1200px;
   margin: 0 auto;
 }
 #header {
@@ -55,4 +114,5 @@ body {
   clear: both;
 }
 /*바로 위에 있는 section에 float: left; 이 있어서 css 등이 먹히지 않음
+*/
 */

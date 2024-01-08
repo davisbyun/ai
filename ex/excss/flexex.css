@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #aaef78;
+}
+#wrap {
+  /*  여기서  display:flex;  flex-wrap: wrap; 해준다. 실제 배치할 곳의 부모 태그에서 */
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#header {
+  /* 배치할 부분의 width: 100%로 하면 한 줄을 차지함, height는 내용에 따라 조정하기 */
+  width: 100%;
+  height: 100px;
+  background-color: #5fcc41;
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav {
+  width: 34%;
+  height: 100px;
+  background-color: #2fd5e4;
+}
+#nav1 {
+  width: 33%;
+  height: 100px;
+  background-color: #5f2fe4;
+}
+#nav2 {
+  width: 33%;
+  height: 100px;
+  background-color: #2fd5e4;
+}
+#aside {
+  width: 50%; /* 배치할 부분의  너비를 70%로 하고 아래의 배치 너비를 30%로 하면 양옆으로 붙여져서 나온다 */
+  height: 780px;
+  background-color: #0ca960;
+}
+#section {
+  width: 50%;
+  height: 780px;
+  background-color: #12767d;
+}
+#footer {
+  width: 25%;
+  height: 100px;
+  background-color: #8cb62b;
+}
+#footer2 {
+  width: 250%;
+  height: 100px;
+  background-color: #e6d67d;
+}
+#footer3 {
+  width: 25%;
+  height: 100px;
+  background-color: #3c9b5b;
+}
+#footer4 {
+  width: 25%;
+  height: 100px;
+  background-color: #9d7de6;
+}
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+  #wrap {
+    width: 96%; /* 좌우간 2% 여백을 위해 96%로 설정함 */
+  }
+}
+@media (max-width: 768px) {
+  #wrap {
+    width: 100%; /* 여백 제거 */
+  }
+}
+@media (max-width: 480px) {
+  #aside {
+    width: 100%;
+    height: 300px;
+  }
+  #section {
+    width: 100%;
+    height: 480px;
+  }
+}
