@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입창</title>
+    <link rel="stylesheet" herf="..memberform.css" />
+  </head>
+  <body>
+    <div id="formInput">
+      <form method="get" action="lgoin.jsp" target="_self">
+        <fieldset>
+          <legend>수강 신청인</legend>
+          <label name="이름">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</label>
+          <input type="text" name="n1" /><br />
+          <label name="이름">비밀번호</label>
+          <input type="text" name="p1" />
+          <br />
+          <button value="submit">확인</button>
+          <button value="reset">취소</button>
+        </fieldset>
+        <fieldset>
+          <legend>수강신청</legend>
+          <ul>
+            <li>
+              <label class="reg"> 성별</label>
+              <input type="radio" name="gender" /> 남자
+              <input type="radio" name="gender" /> 여자
+            </li>
+            <li>
+              <label class="reg"> 숫자증가</label>
+              <br />
+              <label>갯수</label>
+              <label>구매상품 확인</label>
+
+              <input type="number" min="0" max="1000" value="10"/> 개
+            </li>
+            <br />
+              <label>갯수</label>
+              <br/>
+              <label>이벤트 상품 확인</label>
+              <input type="checkbox"> 구매확정
+              <input type="range" min="0" max="100" value="50"/> 개
+            </li>
+            <li>
+              <label class="reg">날짜</label>
+              <br>
+              <input type="date" min="2000-01-01" max="2025-12-31" value="2024-01-01">
+              <input type="month">
+              <input type="week">
+
+
+            </li>
+            <li>
+              <label class="reg" for="id">학번</label>
+              <input type="text" id="name" />
+            </li>
+            <li>
+              <label class="reg" for="id">힉과</label>
+              <select id="class">
+                <optgroup label="공과대학">
+                  <option value="archi">건축공학</option>
+                  <option value="mechanic">기계공학</option>
+                  <option value="indust">산업공학</option>
+                </optgroup>
+                <optgroup label="인문대학">
+                  <option value="soci">사회학과</option>
+                  <option value="lang">어문학학</option>
+                  <option value="philo">철학과</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <input type="image" src="../image/logo.png" alt="로고" onclick="window.open('index.html')"
+              />
+            </li>
+            <li>
+              파일첨부
+              <input type="file"/>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
+
+<input type="checkbox" /> 해외 <input type="checkbox" /> 국내
