@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.net.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> ./member/login.jsp </title>
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+</head>
+<body>
+  <jsp:include page="../menu.jsp"></jsp:include>
+  <div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"> 회원 정보 </h1> 
+    </div>
+  </div> 
+  <div class="container">
+  	    
+    <div style="padding-top: 50px">
+	 <table class="table table-hover">
+    	<tr>
+    	   <th>회원번호</th> <th>아이디</th> <th>비밀번호</th> <th>이름</th> <th>이메일</th>
+    	</tr>
+    	
+    	<%
+    		int sum = 0;
+    	    ArrayList<Product> cartlist = (ArrayList<Product>) session.getAttribute("cartlist");
+    		if( cartlist == null ) {
+    			cartlist = new ArrayList<Product>();
+    		}    
+    		
+    		 for(int i = 0; i < cartlist.size(); i++ ) {
+    			 Product p = cartlist.get(i); // 장바구니에 처음으로 넣어준 상품주소를 얻기
+    			 int total = p.getUnitPrice() * p.getQuantity();  // 소계 구하기
+    			 sum = sum + total;
+    	    
+    	%>
+    	<tr>
+    	<td><%= p.getProductId()  %></td>
+    	<td><%= p.getUnitPrice()  %></td>
+    	<td><%= p.getQuantity() %></td>
+    	<td><%= total  %></td>
+    	<td><a href="./removeCart.jsp?id=<%=p.getProductId() %>" class="badge badge-danger">삭제</a> </td>
+    	</tr>
+    	<%
+    	 } //for문의 끝
+    	%>
+    	<tr>
+    	<th></th> <th></th> <th>총합계</th> <th> <b> <%= sum %> </b> </th> <th></th>
+    	</tr>
+    	</table>
+    	<a href="products.jsp" class="btn btn-primary"> 쇼핑계속하기 </a>
+    </div>
+    
+  </div>
+  <jsp:include page="../footer.jsp"></jsp:include>
+ 
+</body>
+</html>  

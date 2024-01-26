@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.net.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+</head>
+<body>
+	<jsp:include page="menu.jsp"></jsp:include>
+	<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"> 주문완료 </h1> 
+    </div>
+    </div>
+   <div class="container"> 
+   
+	   <%
+	     String sCartId = "";
+	   	 String sDate  = "";
+	   	Cookie c ;
+	   	
+	   	 Cookie [] cArr = request.getCookies();
+	     if (cArr == null) {
+	    	 for(int i =0 ; i< cArr.length; i++) {
+	    		 Cookie c = cArr[i];
+	    		 String cookieName =  c.getName();
+	    		 if(cookieName == "scartSD" ) {
+	    			 sDate = URLDecoder.decode( ( c.getValue() ), "utf-8"  );
+	    		 }
+	    		 if(cookieName == "scartId"){
+	    			 sCartId = URLDecoder.decode( ( c.getValue() ), "utf-8"  );
+	    		 }
+	    	 }
+	    	 
+	     }
+	   %>
+   	   <h2 class="alert alert danger"> 주문해주셔서 감사합니다.</h2>
+   	   <p> 주문은 <%= sDate %>에 배송될 예정입니다.
+   	   <p> 주문번호는 <%= scartId %>	
+   	   </div>
+   	   
+   	   <div class="container">
+		 <p> <a herf="products.jsp" class="btn bbtn-secondary"> </a>   	   
+   	   </div>
+      
+</body>
+
+<jsp:include page="footer.jsp"></jsp:include>
+
+<%
+//세션 지우기
+session.invalidate();
+
+//쿠키 지우기
+for(int i =0, i<c.length; )
+
+
+
+%>
+
+</html>

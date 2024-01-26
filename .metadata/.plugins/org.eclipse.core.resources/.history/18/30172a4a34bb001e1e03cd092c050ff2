@@ -1,0 +1,60 @@
+<%@page import="java.net.URLDecoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.net.URL" %>    
+<%@ page import="dao.ProductRepository" %>
+<%@ page import="dto.Product" %>
+<%@ page import="java.util.*" %>
+
+<%--1단계 모든 정보 가져오기, 2단계 보여주기 --%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>orderConfirmation.jsp 주문정보 페이지 영수증 보이기</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+</head>
+<body>
+	<%
+	 	request.setCharacterEncoding("utf-8");
+		
+		String cartId = session.getId();
+		
+		String vCartId = ""; 
+		String vCartname ="";
+		String vCartSD = "";
+		String vCartCountry ="";
+		String vCartZip = "";
+		String vCartAN ="";
+		
+		//쿠키들을 배열에 담아서 가져오기
+		Cookie[] c = request.getCookies();
+		
+		if(c != null ) {
+			for(int i =0; i < c.length; i++ ) {
+				Cookie t = c[i]; //쿠키배열의 0열에 있는 쿠키를 t변수에 담는다.
+				String cn = t.getName(); //쿠키명을 얻는다. 
+				if(cn.equals("sCartId") ) vCartId = URLDecoder.decode(t.getValue(), "utf-8");
+				if(cn.equals("sCartname") ) vCartname = URLDecoder.decode(t.getValue(), "utf-8");
+				if(cn.equals("sCartSD") ) vCartSD = URLDecoder.decode(t.getValue(), "utf-8");
+				if(cn.equals("sCartCountry") ) vCartCountry = URLDecoder.decode(t.getValue(), "utf-8");
+				if(cn.equals("sCartZip") ) vCartZip = URLDecoder.decode(t.getValue(), "utf-8");
+				if(cn.equals("sCartAN") ) vCartAN = URLDecoder.decode(t.getValue(), "utf-8");
+			}
+		}
+	%>
+<%--2단계 정보보이기 --%>
+<jsp:include page="menu.jsp"></jsp:include>
+ <div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"> 장바구니 </h1> 
+    </div>
+ </div>
+    
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+ 
+</body>
+</html>

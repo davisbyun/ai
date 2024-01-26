@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.oreilly.servlet.*" %>
+<%@ page import="com.oreilly.servlet.multipart.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="java.io.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>process.jsp</h1>
+  <%
+ MultipartRequest multi = new MultipartRequest(request, "d:\\upload", 5*1024*1024, "urf-8", new DefaultFileRenamePolicy());
+  %>
+
+</body>
+</html>

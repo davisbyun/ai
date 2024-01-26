@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>processJoin.jsp - 회원가입 자료 DB에 입력하기</title>
+</head>
+<body>
+   <%
+      // 
+      
+      Class.forName("com.mysql.jdbc.Driver"); 
+   	  
+      //connection 맺기
+      String url = ""; //mysql연결 주소 
+      String userid =""; //mysql 사용자 아이디
+      String passwd =""; //mysql 사용자 비번
+      Connection con=DriverManager.getConnection(url, userid, passwd);
+   
+   
+   %>
+</body>
+</html>

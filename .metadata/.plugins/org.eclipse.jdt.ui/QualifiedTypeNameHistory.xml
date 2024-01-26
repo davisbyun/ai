@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.catalina.Server"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="dao.ProductRepository"/>
+    <fullyQualifiedTypeName name="java.lang.InheritableThreadLocal"/>
+</qualifiedTypeNameHistroy>

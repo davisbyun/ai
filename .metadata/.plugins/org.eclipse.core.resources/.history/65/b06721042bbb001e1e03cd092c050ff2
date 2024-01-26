@@ -1,0 +1,28 @@
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>processShippingInfo.jsp  배송정보 -> 영수증내용 : 쿠키생성</title>
+</head>
+<body>
+	<%
+		request.setCharacterEncoding("utf-8");
+		
+		Cookie sCartId = new Cookie("scartId", URLEncoder.encode(request.getParameter("cartId"), "utf-8" ) );
+		Cookie sCartname = new Cookie("scartname", URLEncoder.encode(request.getParameter("name") , "utf-8" ) );
+		Cookie sCartSD = new Cookie("scartSD", URLEncoder.encode(request.getParameter("shippingDate"), "utf-8" ) );
+		Cookie sCartCountry = new Cookie("scartCountry", URLEncoder.encode(request.getParameter("country"), "utf-8" ) );
+		Cookie sCartZip = new Cookie("scartZip", URLEncoder.encode(request.getParameter("zipCode"), "utf-8" ) );
+		Cookie sCartAN = new Cookie("scartAN", URLEncoder.encode(request.getParameter("adressName"), "utf-8" ) );
+		
+		
+		
+		//응답할 때 쿠키를 클라이언트에게 보내기
+		
+	%>
+</body>
+</html>

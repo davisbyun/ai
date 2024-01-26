@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="dto.Product" %>
+<%@ page import="dao.ProductRepository" %>   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>removeCart.jsp 파일입니다.</title>
+</head>
+<body>
+  <%
+  String id = request.getParameter("id");
+  
+  //id 를 리스트에서 찾아서 지움
+  ProductRepository doa = ProductRepository.getInstance();
+  Product p = dao.getProductId(id);
+  
+  //session값 가져오기
+  Arraylist<Product> cartlist = (Arraylist<Product>)session.getAttribute("cartlist");
+  
+  %>
+</body>
+</html>

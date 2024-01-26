@@ -1,0 +1,63 @@
+<%@page import="dao.ProductRepository"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>processAddProduct.jsp 상품등록 페이지 </title>
+</head>
+<body>
+  <%
+   request.setCharacterEncoding("utf-8");
+   String productId = request.getParameter("productId") ;
+   String name = request.getParameter("name") ;
+   String unitPrice = request.getParameter("unitPrice") ;
+   String description = request.getParameter("description") ;
+   String manufacturer = request.getParameter("manufacturer") ;
+   String category = request.getParameter("category") ;
+   String unitsInStock = request.getParameter("unitsInStock") ;
+   String condition = request.getParameter("condition") ;
+  
+  //금액 정수화 "1500000" --> 1500000으로 변경
+  Integer price;
+  if(unitPrice.isEmpty() )
+	  price=0;
+  else 
+	  price= Integer.valueOf(unitPrice);
+  
+  //재고 정수화 "1000" --> 1000로 변경(정수)
+  Integer units;
+  if(unitsInStock.isEmpty())
+	  units=0;
+  else
+	  units= Integer.valueOf(unitsInStock);
+  
+  //자바 안에 자료 넣기
+  //입력폼 ---> 서버보냄(processAddProduct.jsp)--->
+  
+  ProductRepository dao = ProductRepository.getInstance();  //ProductRepository의 주소를 받음
+  
+  Product newProduct = new product();
+  
+  newProduct.setProductId(productId);
+  newProduct.setPName(name);
+  newProduct.setunitPrice(unitPrice);
+  newProduct.description(description);
+  newProduct.manufacturer(manufacturer);
+  newProduct.category(category);
+  newProduct.unitsInStock(unitsInStock);
+  newProduct.condition(condition);
+  
+    dao.addProduct(newProduct);
+  	response.sendRedirect("product.jsp");
+  
+  
+
+  
+  
+  %>
+  
+  
+</body>
+</html>

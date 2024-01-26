@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>delete.jsp</title>
+</head>
+<body>
+	<%
+	 
+	   String n1 = request.getParameter("number");
+      //"1" int 형변환		
+       Integer nn1 = Integer.valueOf(n1); //String to Integer
+       int number = nn1.intValue(); // Integer to int
+	
+	
+	%>
+
+
+</body>
+</html>
