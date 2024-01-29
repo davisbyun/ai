@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>processModify.jsp 회원정보 수정하기 처리 : 푬수정자료 입력받고 db를 연결해서 update하기->memberInfo로 보내기</title>
+</head>
+<body>
+
+</body>
+</html>

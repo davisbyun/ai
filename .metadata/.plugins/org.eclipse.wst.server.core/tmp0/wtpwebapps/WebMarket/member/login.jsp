@@ -17,7 +17,7 @@
     </div>
   </div> 
   <div class="container">
-     <form action="#"  name="login" class="form-horizontal"  method="post">
+     <form action="processlogin.jsp"  name="login" class="form-horizontal"  method="post">
           
          <div class="form-group row">
             <label class="col-sm-2 f1"> 아이디 </label>

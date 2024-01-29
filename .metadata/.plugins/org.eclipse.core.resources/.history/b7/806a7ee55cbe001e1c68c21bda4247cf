@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>processlogin.jsp 로그인처리하기</title>
+</head>
+<body>
+   <%
+     	request.setCharacterEncoding("utf-8");
+   	 	String id = request.getParameter("id");
+   		String pwd = request.getParameter("pwd");
+   		
+   	    //1.드라이버연결
+   		Class.forName("com.mysql.jdbc.Driver");
+   		//2. con 연결
+   	    String url = "jdbc:mysql://localhost:3306/webmarket?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";   
+   	    String userId ="root";
+   	    String userPwd="1234";
+   	    Connection con = DriverManager.getConnection(url, userId, userPwd);
+   	    //3. sql con올리기
+   	    String selectSql= "select * from membertbl where id=? and pwd=?";
+   	    PreparedStatement pstmt = con.prepareStatement(selectSql);
+   	    //물음표 채우기
+   	    pstmt.setString(1, id);
+   	 	pstmt.setString(2, pwd);
+   	    
+   	    //4.mysql로 보내서 실행하기
+   	    ResultSet rs = pstmt.executeQuery();
+   	    //5.받아온 rs에 포인터 위치하고 필드(열) 가져오기
+   	    String dbId="";
+   	 	String dbPwd="";
+   	 	String dbName="";
+   	 	
+   	 	while (rs.next()) {
+	 		dbId = rs.getString("id");
+	 		dbPwd = rs.getString("pwd");
+	 		dbName = rs.getString("name");
+	   	 	 	   	 	
+		//로그인 성공 id pwd 있음 실패는 없음 rs가 null  이면 실패
+		if( id.equals(dbId) && pwd.equals(dbPwd)  ) {
+				response.sendRedirect("loginSuccess.jsp");
+		}else{
+				response.sendRedirect("login.jsp");
+		}   	
+			
+   %>	
+
+</body>
+</html>

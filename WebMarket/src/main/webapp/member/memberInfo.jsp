@@ -53,7 +53,7 @@
     	   <td> <%= rs.getString("pwd") %></td>
     	   <td> <%= rs.getString("name") %></td>
     	   <td> <%= rs.getString("email") %></td>
-    	   <td> <a href="modify.jsp" class="btn btn-primary"> 수정 </a> </td>
+    	   <td> <a href="modify.jsp?number=<%=rs.getInt("number") %>" class="btn btn-primary"> 수정 </a> </td>
     	   <td> <a href="delete.jsp?number=<%=rs.getInt("number") %>" class="btn btn-danger"> 삭제 </a> </td>
     	</tr>
          <%

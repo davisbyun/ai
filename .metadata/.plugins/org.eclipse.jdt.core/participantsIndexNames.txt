@@ -19,6 +19,8 @@ D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1333
 \WebMarket\src\main\java
 D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1753693066.index
 \jspBook\src\main\java
+D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1944691425.index
+\WebMarket\src\main\java
 D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\821668228.index
 \WebMarket\src\main\java
 D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\875471413.index
