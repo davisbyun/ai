@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta charset="UTF-8">
+<title>boardDelete.jsp 글쓰기 처리 </title>
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+</head>
+<body>
+
+	<%
+	
+	 request.setCharacterEncoding("utf-8");
+	 request.getParameter("title");
+	 request.getParameter("content");
+	 request.getParameter("writer");
+	 request.getParameter("regdate");
+	 
+	 //db연결
+	 
+	%>
+
+
+
+
+  <jsp:include page="../menu.jsp"></jsp:include>
+  <div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"> 글쓰기 처리 </h1> 
+    </div>
+  </div> 
+  
+  
+  <jsp:include page="../footer.jsp"/>
+  
+  </body>
+  </html>
+  

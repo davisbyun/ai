@@ -17,7 +17,7 @@
             <a class="navbar-brand" href="/WebMarket/products.jsp">전체상품</a>
         </div>    
         <div class="navbar-header">    
-            <a class="navbar-brand" href="/WebMarket/board/boards.jsp">게시판</a>
+            <a class="navbar-brand" href="/WebMarket/board/boardList.jsp">게시판</a>
         </div>  
         <div class="navbar-header">
             <a class="navbar-brand" href="/WebMarket/addProduct.jsp">상품추가(판매자)</a>
