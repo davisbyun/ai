@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="dto.Product" %>
-    <%@ page import="java.util.ArrayList" %>
-    <%@ page import ="dao.ProductRepository" %>
+<%@ page import = "java.util.ArrayList" %>   
+<%@ page import ="dto.Product" %> 
+<%@ page import ="dao.ProductRepository" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,48 +12,38 @@
 
 </head>
 <body>
-	<jsp:include page="menu.jsp"></jsp:include>
-	<div class="jumbotron">
+   <jsp:include page="menu.jsp"></jsp:include>
+   <div class="jumbotron">
     <div class="container">
         <h1 class="display-3"> 상품 목록 </h1> 
     </div>
   </div>
-  
-  <%-- --%>
-  <%--자바연결 - productRepository연결 --%>
-  
-  <jsp:useBean id="pr" class="dao.ProductRepository" ></jsp:useBean>
-  <% 	
-   ProductRepository dao = ProductRepository.getInstance();
-   ArrayList<Product> op = dao.getAllProducts();
+  <jsp:useBean id="pr"  class="dao.ProductRepository" ></jsp:useBean>
+  <%
+     ProductRepository dao = ProductRepository.getInstance();
+     ArrayList<Product> op= dao.getAllProducts();   
   %>
-  
   <div class="container">
-  	<div class="row" align="center" >
-  	
-  	<%
-  	for(int i =0; i<op.size(); i++){
-  		Product p = op.get(i);
-  	%>
-  	<div class="col-md-4">
-  	<img src="${pageContext.request.contextPath}/images/<%=p.getFilename() %>" style="width:100%">
-  	<%--<img src="${pageContext.request.contextPath}/images/ 는 webapp까지의 경로임 --%>
-  	
-  	
-  	<h3><%=p.getPname()%></h3>
-  	<h3><%=p.getDescription()%></h3>
-  	<h3><%=p.getUnitPrice()%></h3>
-  	<p><a href="./product.jsp?id=<%=p.getProductId() %>" class="btn btn-secondary"> 상세정보 &raquo;</a>
-  	</div>
-  	<%	
-  	}
-  	%>	
-  	
+     <div class="row"  align="center">
+         <%
+            for(int i=0; i< op.size(); i++) {
+            	  Product p = op.get(i); // 배열안에 주소를 가져온다. 
+         %>
+           <div class="col-md-4">
+           
+               <img src="${pageContext.request.contextPath}/images/<%= p.getFilename() %>" style="width:100%"> 
+             
+               <h3><%= p.getPname() %></h3>
+               <h3><%= p.getDescription() %></h3>
+               <h3><%= p.getUnitPrice() %></h3>
+               <p> <a href="./product.jsp?id=<%= p.getProductId() %>" class="btn btn-secondary" > 상세정보 &raquo; </a>
+           </div>  
+         <%
+            }
+         %>
+     </div>
+     <hr>
   </div>
- <hr>
-  </div>
-  <jsp:include page="footer.jsp"></jsp:include> 
-  
-  
+  <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

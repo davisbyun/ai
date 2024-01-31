@@ -26,21 +26,21 @@
          <div class="form-group row">
             <label class="col-sm-2 f1"> 상품코드 </label>
             <div class="col-sm-4">
-                <input type="text" name="productId" id="productId"  class="form-control"> 
+                <input type="text" name="productId" id="productId" placeholder="예)P1234(첫글자P,5~12자)" class="form-control"> 
             </div>
          </div>  
     
          <div class="form-group row">
             <label class="col-sm-2 f1"> 상품명 </label>
             <div class="col-sm-4">
-                <input type="text" name="name"  id="name"   class="form-control"> 
+                <input type="text" name="name"  id="name" placeholder="영문대소문자,숫자4~12자"  class="form-control"> 
             </div>
          </div> 
     
          <div class="form-group row">
             <label class="col-sm-2 f1"> 가격 </label>
             <div class="col-sm-4">
-                <input type="text" name="unitPrice" id="unitPrice" class="form-control"> 
+                <input type="text" name="unitPrice" placeholder="숫자만" id="unitPrice" class="form-control"> 
             </div>
          </div> 
     
@@ -68,7 +68,7 @@
          <div class="form-group row">
             <label class="col-sm-2 f1"> 재고수 </label>
             <div class="col-sm-4">
-                <input type="text" name="unitsInStock" id="unitsInStock" class="form-control"> 
+                <input type="text" name="unitsInStock" id="unitsInStock" placeholder="숫자만" class="form-control"> 
             </div>
          </div> 
          
@@ -104,5 +104,6 @@
   <script type="text/javascript"  src="./js/validation.js"></script>
 </body>
 </html>
+
 
 

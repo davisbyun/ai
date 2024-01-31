@@ -39,27 +39,25 @@
      //로그인 성공 : 입력받은 id와 DB의 id가 같으면 입력받은 pwd와 DB의 pwd가 같으면 
    
         if(rs.next()){ //rs.next() 자료가 있으면 true 없으면 false가 됨
-             dbId = rs.getString("id");
-              dbPwd = rs.getString("pwd");
-              dbName = rs.getString("name");
-              //세션만들기
-              session.setAttribute("name", dbName); // setAttribute("세션명",값)
-              session.setAttribute("id", dbId); 
-              
-              response.sendRedirect("loginSuccess.jsp");
-              
-              
-              
+        	  dbId = rs.getString("id");
+         	  dbPwd = rs.getString("pwd");
+         	  dbName = rs.getString("name");
+         	  //**** 섹션을 만들기
+         	  session.setAttribute("name", dbName); // setAttribute("섹션명", 값)
+         	  session.setAttribute("id", dbId);
+         	  
+         	  response.sendRedirect("loginSuccess.jsp");
+         	  
         } else if( id.isBlank() || pwd.isBlank() ) { 
-            response.sendRedirect("login.jsp");
+      	   response.sendRedirect("login.jsp");
         
         } else {
-           response.sendRedirect("loginFail.jsp");
+        	response.sendRedirect("loginFail.jsp");
         }
       
   %>
    <h3> 로그인 실패 </h3>  
-        
+    	 
     
 
 </body>

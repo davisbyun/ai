@@ -24,16 +24,16 @@
        //쿠키정보 얻기
        Cookie[] cArr = request.getCookies();
        if( cArr != null ) {
-          for( int i=0; i< cArr.length; i++) {
-             c  = cArr[i];
-             String cookieName = c.getName(); //쿠키이름을 얻어오기 
-             if( cookieName.equals("scartSD")){
-                sDate = URLDecoder.decode(  ( c.getValue() ), "utf-8"  );
-             }
-             if( cookieName.equals( "scartId" )) {
-                sCartId = URLDecoder.decode(  ( c.getValue() ), "utf-8"  );
-             }
-          }
+    	   for( int i=0; i< cArr.length; i++) {
+    		   c  = cArr[i];
+    		   String cookieName = c.getName(); //쿠키이름을 얻어오기 
+    		   if( cookieName.equals( "sCartSD" ) ) {
+    			   sDate = URLDecoder.decode(  ( c.getValue() ), "utf-8"  );
+    		   }
+    		   if( cookieName.equals("sCartId" ) ) {
+    			   sCartId = URLDecoder.decode(  ( c.getValue() ), "utf-8"  );
+    		   }
+    	   }
        }
     
     %>  
@@ -53,18 +53,17 @@
      //쿠키지우기 - 쿠키별로 유효시간을 0초로 바꿔주기
      Cookie c1;
      for( int i=0; i< cArr.length; i++) {
-        c1 = cArr[i];
-        String n = c1.getName();
-        if( n.equals ("sCartId") ) c1.setMaxAge(0);
-        if( n.equals( "sCartName") )c1.setMaxAge(0);
-        if( n.equals( "sCartSD")) c1.setMaxAge(0);
-        if( n.equals("sCartCountry")) c1.setMaxAge(0);
-        if( n.equals( "sCartZip")) c1.setMaxAge(0);
-        if( n.equals( "sCartAN") )c1.setMaxAge(0);
-        response.addCookie(c1); 
+    	 c1 = cArr[i];
+    	 String n = c1.getName();
+    	 if( n.equals( "sCartId") ) c1.setMaxAge(0);
+    	 if( n.equals( "sCartName") ) c1.setMaxAge(0);
+    	 if( n.equals( "sCartSD") ) c1.setMaxAge(0);
+    	 if( n.equals( "sCartCountry") ) c1.setMaxAge(0);
+    	 if( n.equals( "sCartZip") ) c1.setMaxAge(0);
+    	 if( n.equals( "sCartAN") ) c1.setMaxAge(0);
+    	 response.addCookie(c1); 
      }
-     
-  %>
+   %>
   
   
 </body>

@@ -3,35 +3,28 @@ package dto;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-
+   
 	private static final long serialVersionUID = -123456789012345678L;
 	
-	private String productId;
-	private String pname;
-	private Integer unitPrice;
-	private String description;
-	private String manufacturer;
-	private String category;
-	private long unitsInStock;
-	private String condition;
-	private String filename; 
-	private int quantity; //장바구니에 담는 상품의 갯수
+	private String productId; // 상품 아이디
+	private String pname; //상품명
+	private Integer unitPrice; //상품가격
+	private String description ; //상품 설명
+	private String manufacturer ; //제조사
+	private String category; //분류
+	private long unitsInStock; // 재고 수
+	private String condition; // 신상품 또는 중고품 또는 재생품 
+	private String filename; //이미지 파일명
+	private int quantity; //장바구니에 담은 상품의 갯수
 	
 	
-	
-	
-	
-	public Product() {
-		// TODO Auto-generated constructor stub
-	}
+	public Product() {}
 
-	
-	public Product(String productId, String pname, int unitPrice) {
-		    this.productId = productId;
+	public Product(String productId, String  pname, Integer unitPrice) {
+		    this.productId = productId; 
 		    this.pname = pname;
 		    this.unitPrice = unitPrice;
 	}
-
 
 	public String getProductId() {
 		return productId;
@@ -101,27 +94,23 @@ public class Product implements Serializable {
 		return serialVersionUID;
 	}
 
-
 	public String getFilename() {
 		return filename;
 	}
-
 
 	public void setFilename(String filename) {
 		this.filename = filename;
 	}
 
-
 	public int getQuantity() {
 		return quantity;
 	}
-
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 	
-
+	
 	
 	
 }

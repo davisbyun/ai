@@ -14,6 +14,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/ai/install_program/cos-22.05/lib/cos.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/mysql-connector-j-8.3.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

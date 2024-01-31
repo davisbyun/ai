@@ -5,38 +5,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>delete.jsp</title>
+<title>  delete.jsp</title>
 </head>
 <body>
-	<%
-	 
-	   String n1 = request.getParameter("number");
-      //"1" int 형변환		
-       Integer nn1 = Integer.valueOf(n1); //String to Integer
-       int number = nn1.intValue();  //Integer to int  데이터베이스의 타입과 맞추기 위해
-	   //1.드라이버연결
-	   Class.forName("com.mysql.jdbc.Driver");
-       
-     
-       String url = "jdbc:mysql://localhost:3306/webmarket?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";   
-       String userId ="root";
-       String userPwd="1234";
-       
-       //2. con 연결
-       Connection con = DriverManager.getConnection(url, userId, userPwd); 
-	   //3. sql문 작성하기
-	   String deleteSql = "delete from memberTbl where number=?";
-	   //4. sql문 실행
-	   PreparedStatement pstmt =  con.prepareStatement(deleteSql);
-	   //?
-       pstmt.setInt(1, number);
-	   pstmt.executeUpdate(); // insert, update, delete 문 실행하는 메소드
-	   
-	   response.sendRedirect("memberInfo.jsp");
-	   
-	   
-	%>
-
-
+  <%
+      String n1 = request.getParameter("number");
+      // "1" --> int 1 형을 바꾼다.
+      Integer nn1 = Integer.valueOf(n1); // String --> Integer
+      int number = nn1.intValue(); // Integer --> int
+      
+      //1. 드라이버 로드하기
+      Class.forName("com.mysql.jdbc.Driver");
+      //2. con 연결하기
+      String url = "jdbc:mysql://localhost:3306/webMarket?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";
+      String userId = "root";
+      String userPwd = "1234";
+      Connection con = DriverManager.getConnection(url, userId, userPwd);
+      //3. sql문 작성하기
+      String deleteSql = "delete from memberTbl where number=?";
+      //4. sql문 실행
+      PreparedStatement pstmt = con.prepareStatement(deleteSql);
+      // ? 채우기
+      pstmt.setInt(1, number);
+      
+      pstmt.executeUpdate(); // insert문, update문, delet문 실행하는 메소드 
+        
+      response.sendRedirect("memberInfo.jsp");        
+  
+  %>
 </body>
 </html>

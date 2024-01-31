@@ -24,7 +24,7 @@
   String userPwd = "1234";
   Connection con = DriverManager.getConnection(url, userId, userPwd);
   //3. sql작성하기 con올리기
-  String selectSql = "select * from membertbl where number = ?";
+  String selectSql = "select * from memberTbl where number = ?";
   PreparedStatement pstmt = con.prepareStatement(selectSql);
   // ? 채우기
   pstmt.setInt(1, number);

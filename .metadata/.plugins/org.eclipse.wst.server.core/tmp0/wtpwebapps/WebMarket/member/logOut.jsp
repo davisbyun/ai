@@ -7,9 +7,9 @@
 <title> logOut.jsp </title>
 </head>
 <body>
-	<%
-	   session.invalidate();
-	   response.sendRedirect("/WebMarket/welcome.jsp");	
-	%>
+  <%
+     session.invalidate(); //섹션을 초기화 
+     response.sendRedirect("/WebMarket/welcome.jsp");
+  %>
 </body>
 </html>
