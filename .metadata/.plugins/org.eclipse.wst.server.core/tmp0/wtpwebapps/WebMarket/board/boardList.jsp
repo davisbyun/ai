@@ -60,7 +60,10 @@
     	   <td align="center" > <%= rs.getString("writer") %></td>
     	   <td align="center" > <%= rs.getDate("reg_date") %></td>
     	   <td align="center" > <%= rs.getInt("count") %></td>
-    	   <td align="center" > <a href="boardModify.jsp?num=<%=rs.getInt("num") %>" class="btn btn-primary"> 수정 </a> </td>
+    	   <td align="center" > <a href="boardModify.jsp?num=<%=rs.getInt("num") %>&title=<%=rs.getString("title") %>&content=<%=rs.getString("content") %>&writer=<%=rs.getString("writer") %>&regdate=<%=rs.getDate("reg_date") %>&count=<%=rs.getInt("count") %>" class="btn btn-primary"> 
+    	   
+    	   
+    	   수정 </a> </td>
     	   <td align="center" > <a href="boardDelete.jsp?num=<%=rs.getInt("num") %>" class="btn btn-danger"> 삭제 </a> </td>
     	</tr>
          <%

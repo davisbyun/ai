@@ -27,3 +27,5 @@ D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\8754
 \jsp01\src\main\java
 D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1995558610.index
 \jspBook\src\main\java
+D:\ai\study\jsp_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1704921898.index
+\pro\src\main\java

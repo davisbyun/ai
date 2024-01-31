@@ -26,9 +26,8 @@
 	
 	  //jsp --> db 보내기
 	  
-	  Class.forName("com.mysql.jdbc.Driver");
-       
-     
+	   Class.forName("com.mysql.jdbc.Driver");
+
        String url = "jdbc:mysql://localhost:3306/webmarket?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";   
        String userId ="root";
        String userPwd="1234";
