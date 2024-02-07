@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;600;700&family=Noto+Serif+KR:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+    font-family: 'Noto Serif KR';
+    
+}
+.container {
+width:100%;
+margin-bottom: auto;
+}
+.container .row {
+    width:80%;
+    margin: auto;
+}
+.container .row .header {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+} 
+.container .row .header img {
+    padding-top: 20px;
+    margin-left: 0;
+    align-content: center;
+}
+.container .row .header h1 {
+    padding-top: 30px;
+    font-size: 45px;
+    color: #060608;
+}
+.container .row .header p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6e6e6e;
+} 
+.contents {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.contents .card {
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px;
+    background-color: #fff;
+}
+.contents .card img {
+    width: 100%;
+    height: auto;
+}
+.contents .card h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.contents .card p {
+    font-size: 15px;
+    color: #6e6e6e;
+    line-height: 1.5;
+    padding: 10px;
+}
+.container .text-center {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    
+}
+.footer {
+    flex: 1;
+    margin-top: 10px;
+    color: rgb(9, 28, 40);
+}
+.p-3 {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    .contents {
+        flex-direction: column;
+    }
+}

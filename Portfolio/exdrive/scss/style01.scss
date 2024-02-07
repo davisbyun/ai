@@ -1,0 +1,52 @@
+@import "bootstrap/scss/bootstrap";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    ),
+  )
+);
+
+.footer {
+  background: #152f4f;
+  color: rgb(12, 40, 53);
+
+  .links {
+    ul {
+      list-style-type: none;
+    }
+    li a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        text-decoration: none;
+        color: #4180cb;
+      }
+    }
+  }
+  .about-company {
+    i {
+      font-size: 25px;
+    }
+    a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        color: #4180cb;
+      }
+    }
+  }
+  .location {
+    i {
+      font-size: 18px;
+    }
+  }
+  .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;600;700&family=Noto+Serif+KR:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Serif KR", serif;
+}
+.container {
+  width: 100%;
+}
+
+.container1 {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.text-center {
+  margin-bottom: 15px;
+}
+.container .row {
+  width: 80%;
+  margin: auto;
+}
+.container .row .header {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.container .row .header img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0;
+  align-content: center;
+}
+.container .row .header h1 {
+  padding-top: 30px;
+  font-size: 45px;
+  color: #060608;
+}
+.container .row .header p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #6e6e6e;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.contents .card {
+  flex: 1;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 5px 0px;
+  background-color: #fff;
+}
+.contents .card img {
+  width: 100%;
+  margin: 10px 20px;
+  height: auto;
+}
+.contents .card h4 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.contents .card p {
+  font-size: 15px;
+  color: #6e6e6e;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.navbar-expand-lg {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.table .cardsection {
+  display: flex;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .contents {
+    flex-direction: column;
+  }
+}
