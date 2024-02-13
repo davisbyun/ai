@@ -296,7 +296,7 @@ subset( mtcars, wt>=1.5 & wt<=3.0 )
 # data( iris )
 # data(mtcars)
 
- subset( iris, Species == 'setosa')
+subset( iris, Species == 'setosa')
 subset( iris, iris$Sepal.Length > 7.6, select=c(Sepal.Length,Species  )  ) # 또는  
 subset( iris, iris$Sepal.Length > 7.6  )[ ,  c('Sepal.Length','Species' )] 
 
@@ -358,13 +358,35 @@ aggregate(mtcars, by=list( cyl=mtcars$cyl, vs=mtcars$vs ), FUN=mean )
 # 7. mlbench 패키지에서 제공하는 Ionosphere 데이터셋에 대해 다음의 문제를 해결하기 위한 R 코드를 작성하시오.
  
 # (1) 다음과 같이 Ionosphere 데이터셋을 myds에 저장하시오.
-
-library(mlbench)
+installed.packages('mlbench')
+library('mlbench')
 data("Ionosphere")
 myds <- Ionosphere
 myds 
 # (2) myds에서 class 와 V1열의 값을 그룹으로 하여 V3~V10 열의 값들의 표준편차를 출력하시오. (주의: 집계 작업시 팩터 타입의 열은 제외해야 한다).
-aggregate( myds[, 3:10], by=list( 구분=myds$Class, V1 = myds$V1 ), FUN=sd )
+head(myds)
+aggregate( myds[, 3:10], by=list( class=myds$Class, V1 = myds$V1 ), FUN=sd )
+
+
+
+######################################
+## 병합 - merge( 데이터셋1, 데이터셋2 
+##        all=T (외부조인) 또는 all.x=T (왼쪽 외부조인) 또는  all.y=T (오른쪽 외부조인)
+######################################
+
+x <- data.frame(name=c('a','b','c'), math=c(90,80,40))
+x
+y <- data.frame(name=c('a','b','d'), korean=c(75,60,90))
+y
+z <- merge(x, y, by=c('name')) #2개의 공통인 열만 머지된 (inner join 내부조인)
+z
+z1 <- merge(x,y, by=c('name'), all=T) #2개의 모든 데이터 값이 조인된다. 없으면  NA값이 된다. (full join)
+z1
+z2 <- merge(x,y, by=c('name'), all.x=T) #왼쪽에 있는  x의 데이터셋은 모두 조인되고 오른쪽은 안됨 (left outter join)
+z2
+z3 <- merge(x,y, by=c('name'), all.y=T) # 오른에 있는  x의 데이터셋은 모두 조인되고 왼쪽은 안됨 (right outter join)
+z3
+
 
 # 14. 다음 문제를 해결하기 위한 R 코드를 작성하시오.
 # 
@@ -386,14 +408,22 @@ agg <- aggregate( subway.tot[, c(  'on_tot','off_tot'   )],
 head( agg )
 tail( agg )
 # (3) subway.tot에서 2011년도에 대해서만 역 이름을 기준으로 on_tot(탑승 인원)과 off_tot(하차 인원)을 집계(합계)하여 출력하시오. ????? 문제가 있다. income_date가 실제내용이 7340??? - 다시 풀기 
-year.2011 <- subway.tot$income_date >= 20110101 & subway.tot$income_date <= 20111231 
-year.2011  
+#2011년도만 추출
+condi <- subway.tot$income_date <= 20110101 & subway.tot$income_date <= 20111231
+aggregate(subway.tot[condi, c('on_tot','off_tot')], by=list(역이름=subway.tot$stat_name[condi]), FUN=sum)
 
-agg.2011 <- aggregate( subway.tot[  year.2011   , c(  'on_tot','off_tot', 'income_date'   )],  
-                       by=list( 역이름=subway.tot$stat_name[ year.2011 ]   ), 
-                       FUN=sum ) 
-head( agg.2011 )
+
 # (4) subway.tot에서 2011년도에 대해서 LINE_NUM(호선)별 on_tot(탑승 인원)과 off_
 # tot(하차 인원)을 집계(합계)하여 출력하시오.
+aggregate(subway.tot [condi, c('on_tot','off_tot')], by=list(호선별=subway.tot$LINE_NUM[condi]), FUN=sum)
 
 
+#15. 다음의 문제
+
+authors <- data.frame(surname = c("Twein", "Venables", "Tierney", "Ripley", "McNeil"), nationality = c("US", "Australia", "US", "UK", "Australia"),  retired = c("yes", rep("no", 4)))
+books <- data.frame(name = c("Johns", "Venables", "Tierney", "Ripley", "Ripley", "McNeil"), title = c("Exploratory Data Analysis","Modern Applied Statistics ...","LISP-STAT","Spatial Statistics", "Stochastic Simulation","Interactive Data Analysis"), other.author = c(NA, "Ripley", NA, NA, NA, NA))
+merge( authors, books, by.x=c('surname'), by.y=c('name') )
+merge( authors, books, by.x=c('surname'), by.y=c('name'), all.x=T)
+merge( authors, books, by.x=c('surname'), by.y=c('name'), all.y=T)
+       
+      
