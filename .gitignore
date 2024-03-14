@@ -1,0 +1,8 @@
+*.zip
+*.weights
+*.pb
+*.h5
+*.cfg
+datasets/
+temp/
+*.mp4
