@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title> th1201.html </title>
+</head>
+<body>
+	<h3> 이름 결과가 나오는 클라이언트 </h3>
+   <div>
+	 결과는 <span	th:text="${	response }">
+   </div>  
+	
+</body>
+</html>

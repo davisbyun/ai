@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>타임리프 반복 처리 예제</title>
+</head>
+
+<body>
+  <h1> Thymeleaf 링크처리 예제 페이지 </h1>
+  <div> 
+    <a th:href="@{/thymeleaf/ex01}">예제1 페이지 이동</a>
+  </div>
+  <div>
+    <a th:href="@{https://www.thymeleaf.org/}">thymeleaf공식 페이지 이동</a>
+  </div>
+  <div>
+	<a th:href="@{/th/ex11(param1='abcd', param2='한글로')}"> 서버로 전달 </a>
+  </div>
+   <div>
+	  <a th:href="@{/th/ex12( name='정현희', phone='010', hobby='컴퓨터')}" > 학생정보 </a>
+   </div>
+   <div>
+     <a th:href="@{/th/ex13( name='홍길동', score='50')}" > 합격여부 </a>
+   </div>
+   
+</body>
+
+</html>

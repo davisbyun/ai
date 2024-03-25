@@ -1,0 +1,30 @@
+package com.shop.entity;
+
+import groovy.transform.ToString;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name="member")
+public class member {
+@Getter
+@Setter
+@ToString
+
+public class Member {
+	@Id
+	@Column(name="member_id")
+	@GenratedValue(strategy=generatedType.AUTO)
+	
+	private Long id;
+	private String name;
+	private String email ;
+	private String password;
+	private String address;
+	private Role;
+}
+}

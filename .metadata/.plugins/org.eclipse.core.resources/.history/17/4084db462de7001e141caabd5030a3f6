@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>타임리프 반복 처리 예제 - ex10.html</title>
+</head>
+<body>
+   <h1> 학생 전화번호 리스트 </h1>
+   <table border="1">
+      <tr>
+         <td> 이름 </td>
+         <td> 전화번호  </td>
+         <td> 취미  </td>
+      </tr>
+      <tr th:each="student, status: ${stList}" > 
+          <td th:text="${ student.name   }"> </td>
+           <td th:text="${ student.phone }"></td>
+           <td th:text="${ student.hobby }"></td>
+       </tr>
+   </table>
+  
+</body>
+</html>

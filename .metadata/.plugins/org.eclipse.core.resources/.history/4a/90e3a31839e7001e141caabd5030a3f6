@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title> th1301.html </title>
+</head>
+<body>
+	<h3> 합격 여부 결과가 나오는 클라이언트 </h3>
+   <div>
+	 당신의 결과는 <span th:text="${	response }">
+   </div>  
+	
+</body>
+</html>

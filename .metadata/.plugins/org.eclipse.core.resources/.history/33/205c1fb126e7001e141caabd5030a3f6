@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>타임리프 반복 처리 예제</title>
+</head>
+<body>
+    
+	 <th:each = "nameDto, status:${nameList}">
+		<th:text="${ nameDto }"> <br>
+	 </th:each> 
+
+  
+</body>
+</html>

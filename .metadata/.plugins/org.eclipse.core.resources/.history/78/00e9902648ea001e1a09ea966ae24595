@@ -1,0 +1,46 @@
+package com.shop.entity;
+
+import org.apache.catalina.Role;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import groovy.transform.ToString;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+public class Member {
+@Entity 
+@TableGenerator(name="member")
+
+@Setter
+@Getter
+@lombok.ToString
+
+
+	@Id
+	@Column(name="member_id")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	
+	private Long id;
+	private String name;
+	private String email;
+	@Column(unique=true)
+	private String password;
+	private String address;
+	@Euimerated(EnumType.STRING)
+	private Role role;
+	
+	public static Member createMember(MemberFormDto memberFormDto,
+									  PasswordEncoder passwordEncoder) {
+		   Member member=new Member();
+		   member.setName(memberFormDto.getName());
+		   member.setEmail(memberFormDto.getEmail());
+		   member.setAddress(memberFormDto.getAddress());
+		   String password = passwordEncoder.dncode(memberFormDto.getPassword());
+		   member.setPassword(password);
+		   member.setRole(Role.USER);
+		   return member;
+	}
+	
+}
+

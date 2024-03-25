@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title> 타임리프 예제2 </title>
+</head>
+<body>
+   <h1> 상품 데이터 출력 예제 </h1>
+   <div>
+	    상품명 : <span th:text="${i.itemNm } "></span>
+   </div>
+   <div>
+       상품상세설명 : <span th:text="${i.itemDetail } "></span>
+   </div>
+   <div>
+	    상품등록일 : <span th:text="${i.regTime } "></span>
+	</div> 
+    <div>
+	    상품가격 : <span th:text="${i.price } "></span>
+	</div> 
+</body>
+</html>
