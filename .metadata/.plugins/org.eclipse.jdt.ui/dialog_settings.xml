@@ -17,7 +17,7 @@
 		<item key="pageIndex" value="1"/>
 	</section>
 	<section name="NewEnumCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="697"/>
+		<item key="DIALOG_X_ORIGIN" value="648"/>
 		<item key="DIALOG_Y_ORIGIN" value="184"/>
 		<item key="DIALOG_WIDTH" value="543"/>
 		<item key="DIALOG_HEIGHT" value="517"/>
@@ -27,7 +27,7 @@
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="667"/>
+		<item key="DIALOG_X_ORIGIN" value="616"/>
 		<item key="DIALOG_Y_ORIGIN" value="97"/>
 		<item key="DIALOG_WIDTH" value="575"/>
 		<item key="DIALOG_HEIGHT" value="659"/>

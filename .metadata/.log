@@ -1,4 +1,4 @@
-!SESSION 2024-03-26 10:27:09.923 -----------------------------------------------
+!SESSION 2024-03-27 09:10:35.559 -----------------------------------------------
 eclipse.buildId=4.22.0.202403071427
 java.version=17.0.10
 java.vendor=Eclipse Adoptium
@@ -7,201 +7,19 @@ Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
 This is a continuation of log file D:\ai\study\spring_study\.metadata\.bak_5.log
-Created Time: 2024-03-26 13:14:47.538
+Created Time: 2024-03-27 12:52:06.641
 
-!ENTRY org.eclipse.jdt.core 4 4 2024-03-26 13:14:47.538
-!MESSAGE Error occurred while deleting: /shop/target/test-classes/com
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Could not delete '/shop/target/test-classes/com'.
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:415)
-	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
-	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
-	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Problems encountered while deleting files.
-Contains: Could not delete: D:\ai\study\spring_study\shop\target\test-classes\com\shop.
-java.nio.file.AccessDeniedException: D:\ai\study\spring_study\shop\target\test-classes\com\shop
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
-	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
-	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:274)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:412)
-	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
-	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
-	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 org.eclipse.core.resources 4 273 2024-03-26 13:14:47.538
-!MESSAGE Problems encountered while deleting resources.
-!SUBENTRY 2 org.eclipse.core.resources 4 273 2024-03-26 13:14:47.538
-!MESSAGE Could not delete '/shop/target/test-classes/com'.
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:415)
-	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
-	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
-	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Problems encountered while deleting files.
-Contains: Could not delete: D:\ai\study\spring_study\shop\target\test-classes\com\shop.
-java.nio.file.AccessDeniedException: D:\ai\study\spring_study\shop\target\test-classes\com\shop
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
-	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
-	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:274)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:412)
-	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
-	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
-	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 3 org.eclipse.core.resources 4 273 2024-03-26 13:14:47.538
-!MESSAGE Problems encountered while deleting resources.
-!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2024-03-26 13:14:47.538
-!MESSAGE Problems encountered while deleting files.
-!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2024-03-26 13:14:47.538
-!MESSAGE Could not delete: D:\ai\study\spring_study\shop\target\test-classes\com\shop.
-!STACK 0
-java.nio.file.AccessDeniedException: D:\ai\study\spring_study\shop\target\test-classes\com\shop
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
-	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
-	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:274)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
-	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:412)
-	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
-	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
-	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
-	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:65)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:289)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:06.641
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
 
-!ENTRY org.eclipse.lsp4e 4 0 2024-03-26 13:14:47.694
-!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@6741e36a
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:06.642
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 9688
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:06.646
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8324
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:07.246
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@2d10cd1e
 !STACK 0
 java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
@@ -219,7 +37,7 @@ Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파�
 	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
 	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
-	at jdk.proxy21/jdk.proxy21.$Proxy65.shutdown(Unknown Source)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
 	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
 	... 7 more
 Caused by: java.io.IOException: 파이프가 닫히는 중입니다
@@ -230,7 +48,7 @@ Caused by: java.io.IOException: 파이프가 닫히는 중입니다
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:47.695
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.246
 !MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
 START:
 D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
@@ -243,25 +61,25 @@ D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\
 -XX:TieredStopAtLevel=1
 -Xlog:jni+resolve=off
 -Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
--XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711426487694
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511527246
 org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
 --languageserver.hover-timeout=225
 END
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 13:14:47.695
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:07.247
 !MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 13:14:47.695
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:07.247
 !MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:47.695
-!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10156
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.248
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 8324
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:47.697
-!MESSAGE Started org.springframework.tooling.boot.ls LS process 11352
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.250
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10124
 
-!ENTRY org.eclipse.lsp4e 4 0 2024-03-26 13:14:48.450
-!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@5688ee05
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:07.955
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@48709396
 !STACK 0
 java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
@@ -279,7 +97,7 @@ Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파�
 	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
 	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
-	at jdk.proxy21/jdk.proxy21.$Proxy65.shutdown(Unknown Source)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
 	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
 	... 7 more
 Caused by: java.io.IOException: 파이프가 닫히는 중입니다
@@ -290,7 +108,7 @@ Caused by: java.io.IOException: 파이프가 닫히는 중입니다
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:48.450
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.955
 !MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
 START:
 D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
@@ -303,19 +121,499 @@ D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\
 -XX:TieredStopAtLevel=1
 -Xlog:jni+resolve=off
 -Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
--XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711426488450
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511527955
 org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
 --languageserver.hover-timeout=225
 END
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 13:14:48.451
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:07.956
 !MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 13:14:48.451
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:07.956
 !MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:48.451
-!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11352
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.956
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10124
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-26 13:14:48.452
-!MESSAGE Started org.springframework.tooling.boot.ls LS process 392
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:07.957
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2736
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:08.948
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@2e96aeea
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:08.949
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511528948
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:08.949
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:08.949
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:08.950
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 2736
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:08.951
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10684
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:09.465
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@5ce00820
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:09.465
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511529465
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:09.465
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:09.465
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:09.466
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10684
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:09.467
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7964
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:10.388
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@7d8b246f
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:10.389
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511530388
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:10.389
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:10.390
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:10.390
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 7964
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:10.392
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11292
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:11.113
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@54250bed
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.114
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511531113
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:11.114
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:11.115
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.115
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11292
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.118
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5172
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:11.658
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@5395d9b6
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.659
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511531658
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:11.659
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:11.659
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.660
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 5172
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:11.671
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6364
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:12.730
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@33e8513a
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:12.731
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511532730
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:12.731
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:12.732
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:12.732
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 6364
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:12.734
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8388
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:13.277
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@ccb6ac4
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:13.277
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511533277
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:13.277
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:13.278
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:13.278
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 8388
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:13.280
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10852
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 12:52:27.015
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@5e19b514
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: 파이프가 닫히는 중입니다
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy18/jdk.proxy18.$Proxy57.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: 파이프가 닫히는 중입니다
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:27.017
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\ai\install_program\sts\spring-tool-suite-4-4.22.0\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ai/study/spring_study/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711511547016
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:27.018
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:52:27.018
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:27.018
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10852
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 12:52:27.020
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6724

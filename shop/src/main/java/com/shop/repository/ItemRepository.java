@@ -1,5 +1,5 @@
 package com.shop.repository;
-
+//퀴리문의 저장소 repository
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -18,7 +18,7 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 	
 	@Query(" select i from Item i where  i.itemDetail like %:itemDetail%  order by i.price desc ")
 	List<Item>  findByItemDetail( @Param("itemDetail") String itemDetail );
-
+                                         //jsp의 ?표
 	@Query(value=" select * from Item i where  i.item_detail like %:itemDetail%  order by i.price desc ", nativeQuery=true)
 	List<Item>  findByItemDetailByNative( @Param("itemDetail") String itemDetail );
 

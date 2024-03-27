@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="562"/>
+		<item key="DIALOG_X_ORIGIN" value="513"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="983"/>
 		<item key="DIALOG_HEIGHT" value="1018"/>
@@ -22,6 +22,14 @@
 			<item value="org.eclipse.pde.userAssistance"/>
 		</list>
 		<section name="NewWizard.dialogBounds">
+		</section>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.e4.ui.importer.wizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<section name="ImportExportWizard.dialogBounds">
 		</section>
 	</section>
 </section>

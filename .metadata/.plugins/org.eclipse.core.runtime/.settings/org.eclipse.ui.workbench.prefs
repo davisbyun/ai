@@ -1,6 +1,6 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.wst.sse.ui\tTterminal.views.theme.category\tTorg.eclipse.ui.presentation.default
-ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.ui.workbench.TREE_TABLE_FONT
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.ui.workbench.TAB_TEXT_FONT
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Consolas|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
@@ -28,6 +28,7 @@ org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
 org.eclipse.ui.workbench.INACTIVE_TAB_BG_END=49,53,56
 org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=59,64,66
 org.eclipse.ui.workbench.INACTIVE_TAB_TEXT_COLOR=187,187,187
+org.eclipse.ui.workbench.TAB_TEXT_FONT=1|\uB9D1\uC740 \uACE0\uB515|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-127|3|2|1|50|\uB9D1\uC740 \uACE0\uB515;
 org.eclipse.ui.workbench.TREE_TABLE_FONT=1|\uB9D1\uC740 \uACE0\uB515|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-127|3|2|1|50|\uB9D1\uC740 \uACE0\uB515;
 org.eclipse.wst.sse.ui.textfont=1|Consolas|18.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 terminal.views.view.font.definition=1|Consolas|18.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
